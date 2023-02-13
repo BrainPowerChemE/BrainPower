@@ -1,1 +1,59 @@
+objects to think about:
+metadata dictionary
+data model dataframe
+data dataframe
+error report
+
+
 metadata_input.py
+# Convert input strings to metadata dictionary
+  input:
+    strings for tech ID, patient ID, date of entry, date of analysis, data model ID
+  output:
+    metadata dictionary
+
+define_data_model.py
+# define expected data model
+  input:
+    csv of protein list
+    existing dataframe of protein list
+    user input
+  output:
+    empty dataframe of protein list
+    
+data_model_checker.py
+# run unittests on data model against protein database (RCSB, NCBI, UniProt, wwPDB)
+  input:
+    dataframe of protein list
+    unittests for data model dataframe
+  output:
+    error report
+    
+metadata_checker.py
+# run unittests on metadata dictionary
+  input: 
+    dictionary of metadata
+    unittests for metadata dictionary
+  output:
+    error report
+
+get_csv.py
+# retrive csv from local hard drive based on user input
+  input: 
+    file location
+  output:
+    dataframe
+
+metadata_append.py
+# append metadata to dataframe
+  input:
+    dataframe
+    metadata
+  output:
+    dataframe with metadata
+
+data_checker.py
+# check dataframe against data model defined in metadata
+   input:
+    dataframe with metadata
+    unittests
