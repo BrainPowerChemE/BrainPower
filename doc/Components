@@ -4,7 +4,7 @@ data model dataframe
 data dataframe
 error report
 
-
+Use case: submit new data
 metadata_input.py
 # Convert input strings to metadata dictionary
   input:
@@ -57,3 +57,5 @@ data_checker.py
    input:
     dataframe with metadata
     unittests
+   output:
+    error report
