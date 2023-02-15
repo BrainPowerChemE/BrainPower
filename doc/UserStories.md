@@ -5,7 +5,9 @@ programming. He wants to use this tool to identify biomarkers for
 Parkinson’s and Alzheimer’s. He wants an easy user interface that 
 summarizes the data nicely. 
 
-A clinician named Dr. Bob deals with older patients who might have 
+
+
+A clinician named Dr. Lisa Bob deals with older patients who might have 
 neurodegenerative diseases such as Alzheimers or Parkinsons and needs to 
 input new information or updated diagnoses into the database. Dr. Bob also 
 wants to see visualizations on specific patients to understand the risk of 
