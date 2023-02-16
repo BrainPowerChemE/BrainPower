@@ -1,3 +1,3 @@
 # BrainPower
 
-This is Mariam's edit.
+These are our edits.
