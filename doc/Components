@@ -1,61 +1,37 @@
-objects to think about:
-metadata dictionary
-data model dataframe
-data dataframe
-error report
+Use cases:
+•	Upload new data, clean, and append to training data base
+•	Upload new data, clean, and submit for statistical risk assessment
+•	Generate visualization of risk according to predetermined model among database sample set
+•	Generate statistical risk assessment
+•	Generate risk report with statistical assessment and visualizations
 
-Use case: submit new data
-metadata_input.py
-# Convert input strings to metadata dictionary
-  input:
-    strings for tech ID, patient ID, date of entry, date of analysis, data model ID
-  output:
-    metadata dictionary
+Components:
+Cleandata.py
+•	Function: Correct data type, remove white space, remove punctuation, format data in dataframe, append metadata
+•	Input: raw data in csv format and metadata in dataframe format, GUI to edit
+•	Output: formatted DF with metadata
 
-define_data_model.py
-# define expected data model
-  input:
-    csv of protein list
-    existing dataframe of protein list
-    user input
-  output:
-    empty dataframe of protein list
-    
-data_model_checker.py
-# run unittests on data model against protein database (RCSB, NCBI, UniProt, wwPDB)
-  input:
-    dataframe of protein list
-    unittests for data model dataframe
-  output:
-    error report
-    
-metadata_checker.py
-# run unittests on metadata dictionary
-  input: 
-    dictionary of metadata
-    unittests for metadata dictionary
-  output:
-    error report
+Checkdata.py
+•	Function: check formatted DF & metadata for any errors
+•	Input: formatted DF with metadata
+•	Output: formatted DF with metadata
 
-get_csv.py
-# retrive csv from local hard drive based on user input
-  input: 
-    file location
-  output:
-    dataframe
+Appendtrainingdata.py
+•	Function: create anonymized label for data, separate metadata from data, append both to the respective tables in the database
+•	Input: clean DF with metadata 
+•	Output: labeled data to extended anonymous database, associated metadata to extended patient database
 
-metadata_append.py
-# append metadata to dataframe
-  input:
-    dataframe
-    metadata
-  output:
-    dataframe with metadata
+Visualizer.py
+•	Generate visualization of patient data / risk assessment against extended anonymous data
+•	Input: visual model, risk model, extended data, patient data
+•	Output: image file or plot
 
-data_checker.py
-# check dataframe against data model defined in metadata
-   input:
-    dataframe with metadata
-    unittests
-   output:
-    error report
+Statrisk.py
+•	Generate statistical risk assessment for patient based on patient data and selected model(s)
+•	Input: risk model, patient data
+•	Output: statistical risk assessment csv
+
+Report.py
+•	Combine visualizations and statistical risk assessment into report for clinician
+•	Input: stat risk csv, visualization image or plot
+•	Output: report PDF
