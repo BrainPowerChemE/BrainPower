@@ -11,7 +11,7 @@ def clean_raw_bp_data(frame,retdict=True):
     # retglobals (default=true) also returns list_protein_long, list_protein_short, dict_proteins for global use without calling bp_altair_util.[global variable]
 
     # Set index of frames to assay id
-    frame.set_index('group', inplace=True)
+    
 
     # List column headers AKA protein name long forms. Frame[0] chosen arbitrarily. the assertion on line 17 should ensure they are redundant. Set global variable.
     global list_protein_long
