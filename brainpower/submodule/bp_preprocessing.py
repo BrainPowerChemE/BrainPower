@@ -7,6 +7,7 @@ import time
 import sklearn.linear_model
 import sklearn.metrics
 import sklearn.naive_bayes
+import sklearn.preprocessing
 
 import imblearn
 import mrmr
