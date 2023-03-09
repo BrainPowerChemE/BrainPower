@@ -79,14 +79,13 @@ def split_cats_by_tolerance(frame,tolerance,silent=False,randomstate=98281,split
     return df_dev, df_test
 
 
-def over_under(df_train,df_val,cat_in_excess='Healthy',target='group',randomstate=np.random.randint(0,4294967295)):
+def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.random.randint(0,4294967295)):
     """
     Takes dataframe(s) with only the target value and float64 features
     This function is to balance the samples in an imbalanced training dataset that has one category in excess, with additional categories more near each other
     The categories below the category in excess will be oversampled to equality, then the category in excess will be undersampled to equality
     ---Parameters---
     df_train: the training dataframe
-    df_val: the validation dataframe
     cat_in_excess: the category which is present in excess, far above the other categories
     target: target column in the dataframe
     randomstate: if chosen, this will the random state for the sampling. Default: None, numpy random integer method between 0 and 4294967295, the range of the sampling module used
@@ -115,16 +114,6 @@ def over_under(df_train,df_val,cat_in_excess='Healthy',target='group',randomstat
     return df_train_eq
 
     
-def mrmr_shorthand(X_train, y_train,X_val,y_val,K,model):
-    feature_performance = []
-
-    for k in K:
-        reduced_features = mrmr.mrmr_classif(X_train,y_train,K=k)
-        X_train_reduced = X_train[reduced_features]
-        X_val_reduced = X_val[reduced_features]
-        model.fit(X_train_reduced,y_train)
-        feature_performance.append([k,score(y_val,model.predict(X_val_reduced)),reduced_features])
-    return feature_performance
 
 
 def mrmr_shorthand(X_train, y_train,X_val,y_val,K,model,score):
