@@ -5,6 +5,7 @@ import sklearn.metrics
 import sklearn.linear_model
 import seaborn as sns
 import matplotlib.pyplot as plt 
+import time
 
 def mrmr_feature_selection(data_dev, split, 
     min_features, max_features, step_features, folds,
@@ -31,7 +32,7 @@ def mrmr_feature_selection(data_dev, split,
             model.fit(X_train_reduced,y_train)
             feature_performance.append([k,score(y_val,model.predict(X_val_reduced)),reduced_features])
         return feature_performance
-
+    t0 = time.time()
     folded_performances = []
     i=0
     while i < folds:
@@ -84,4 +85,7 @@ def mrmr_feature_selection(data_dev, split,
     plt.scatter(x=performance_mean['feature_num'],y=performance_mean['avg_score'],marker=".", s=1)
     plt.errorbar(x=performance_mean['feature_num'],y=performance_mean['avg_score'], c='black',elinewidth=1, yerr=performance_mean['yerr'], fmt="o")
     plt.show()
+    t1 = time.time()
+    total_time = t1-t0
+    print('Time elapsed:',total_time)
     return performance_mean
