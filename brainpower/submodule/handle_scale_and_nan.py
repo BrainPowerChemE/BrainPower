@@ -2,24 +2,24 @@ import pandas as pd
 import sklearn.preprocessing
 
 
-def handle_scale_and_nan(frame,nandecision='drop',scale='StandardScaler'):
-    features = list(frame.select_dtypes(include='float64'))
-    cat = list(frame.select_dtypes(include='object'))
-
-    if scale == 'MinMax':
-        scaler = sklearn.preprocessing.MinMaxScaler().fit(frame[features])
-    elif scale == 'StandardScaler':
-        scaler = sklearn.preprocessing.StandardScaler().fit(frame[features])
-        
-    df_cont = pd.DataFrame(data=scaler.transform(frame[features]), columns=features)
-    df_cat = pd.DataFrame(data=frame[cat], columns=cat)
+def handle_scale_and_nan(df, nan_decision='drop'):
+    features = list(df.select_dtypes(include='float64'))
+    cat = list(df.select_dtypes(include='object'))
+    scaler = sklearn.preprocessing.StandardScaler().fit(df[features])
+    df_cont = pd.DataFrame(data=scaler.transform(df[features]), columns=features)
+    df_cat = pd.DataFrame(data=df[cat], columns=cat)
     
-    frame = pd.concat([df_cat,df_cont],axis=1)
+    df = pd.concat([df_cat,df_cont],axis=1)
     
-    if nandecision == 'mean':
-            for feature in features:
-                frame[feature].fillna((frame[feature].mean()), inplace=True)
-    elif nandecision == 'drop':
-            frame = frame.dropna(axis=1)
+    if nan_decision == 'mean':
+        for feature in features:
+            df[feature].fillna((df[feature].mean()), inplace=True)
+    elif nan_decision == 'drop':
+            df = df.dropna(axis=1)
+    elif nan_decision == 'impute':
+        imputer = missingpy.MissForest() #must be in shape of n_samples by n_features
+        df = imputer.fit_transform(df[:, 1:])
+    elif nan_decision == 'replace_ones': 
+        df.fillna(value=1)
         
-    return frame
+    return df
