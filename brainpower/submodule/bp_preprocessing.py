@@ -3,16 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-
 import sklearn.linear_model
 import sklearn.metrics
 import sklearn.naive_bayes
 
 import imblearn
 import mrmr
-
-
-
 
 
 def handle_scale_and_nan(frame,nandecision='drop',scale='MinMax'):
