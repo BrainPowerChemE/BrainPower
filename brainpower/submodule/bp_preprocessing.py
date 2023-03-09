@@ -87,7 +87,6 @@ def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.ra
     randomstate: if chosen, this will the random state for the sampling. Default: None, numpy random integer method between 0 and 4294967295, the range of the sampling module used
     randomstate_sampler: the number of loops to run to compare random states starting from 
     """
-
         
     # Drop the excessive category and oversample minority to the intermediate category
     df_train_no_excess = df_train[df_train.group != cat_in_excess]
@@ -109,8 +108,6 @@ def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.ra
     
     return df_train_eq
 
-    
-
 
 def mrmr_shorthand(X_train, y_train,X_val,y_val,K,model,score):
     feature_performance = []
@@ -123,10 +120,8 @@ def mrmr_shorthand(X_train, y_train,X_val,y_val,K,model,score):
         feature_performance.append([k,score(y_val,model.predict(X_val_reduced)),reduced_features])
     return feature_performance
 
-
 def mrmr_feature_selection(data_dev, split, 
-    min_features, max_features, step_features, folds,
-    tolerance=0.01,featureselector=mrmr.mrmr_classif,model=sklearn.linear_model.RidgeClassifier(),score=sklearn.metrics.balanced_accuracy_score):
+    min_features, max_features, step_features, folds, tolerance=0.01, featureselector=mrmr.mrmr_classif, model=sklearn.linear_model.RidgeClassifier(), score=sklearn.metrics.balanced_accuracy_score):
 
     """
     data_dev: development data in a pandas dataframe
@@ -137,10 +132,7 @@ def mrmr_feature_selection(data_dev, split,
     folds: number of repeat evaluations of one feature space size. The training and validation data will be resampled from the dev data each time. It is important that test data is not fed to this function. 
     tolerance: (Default=0.01) acceptable level of standard deviation between categories among the training and validation data. Percent categories are calculated first, then their stdev is calculated and compared to the stated tolerance
 
-
     """
-
-
     t0 = time.time()
     folded_performances = []
     i=0
