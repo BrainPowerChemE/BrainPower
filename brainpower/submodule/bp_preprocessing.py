@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-
 import sklearn.linear_model
 import sklearn.metrics
 import sklearn.naive_bayes
@@ -13,30 +12,28 @@ import imblearn
 import mrmr
 
 
-
-
-
-def handle_scale_and_nan(frame,nandecision='drop',scale='MinMax'):
-    features = list(frame.select_dtypes(include='float64'))
-    cat = list(frame.select_dtypes(include='object'))
-
-    if scale == 'MinMax':
-        scaler = sklearn.preprocessing.MinMaxScaler().fit(frame[features])
-    elif scale == 'Standard':
-        scaler = sklearn.preprocessing.StandardScaler().fit(frame[features])
-        
-    df_cont = pd.DataFrame(data=scaler.transform(frame[features]), columns=features)
-    df_cat = pd.DataFrame(data=frame[cat], columns=cat)
+def handle_scale_and_nan(df, nan_decision='drop'):
+    features = list(df.select_dtypes(include='float64'))
+    cat = list(df.select_dtypes(include='object'))
+    scaler = sklearn.preprocessing.StandardScaler().fit(df[features])
+    df_cont = pd.DataFrame(data=scaler.transform(df[features]), columns=features)
+    df_cat = pd.DataFrame(data=df[cat], columns=cat)
     
-    frame = pd.concat([df_cat,df_cont],axis=1)
+    df = pd.concat([df_cat,df_cont],axis=1)
     
-    if nandecision == 'mean':
-            for feature in features:
-                frame[feature].fillna((frame[feature].mean()), inplace=True)
-    elif nandecision == 'drop':
-            frame = frame.dropna(axis=1)
+    if nan_decision == 'mean':
+        for feature in features:
+            df[feature].fillna((df[feature].mean()), inplace=True)
+    elif nan_decision == 'drop':
+            df = df.dropna(axis=1)
+    elif nan_decision == 'impute':
+        imputer = missingpy.MissForest() #must be in shape of n_samples by n_features
+        df = imputer.fit_transform(df[:, 1:]) # impute NaNs with existing numerical vals
+        df.insert(0, "group", df[:, 0], allow_duplicates=True) # reinsert the nominal vals
+    elif nan_decision == 'replace_ones': 
+        df.fillna(value=1)
         
-    return frame
+    return df
 
 def split_cats_by_tolerance(frame,tolerance,silent=False,randomstate=98281,split=0.15,step=1,categories=['Healthy','AD_MCI','PD','PD_MCI_LBD']):
     tolerable_list =[]
@@ -92,7 +89,6 @@ def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.ra
     randomstate: if chosen, this will the random state for the sampling. Default: None, numpy random integer method between 0 and 4294967295, the range of the sampling module used
     randomstate_sampler: the number of loops to run to compare random states starting from 
     """
-
         
     # Drop the excessive category and oversample minority to the intermediate category
     df_train_no_excess = df_train[df_train.group != cat_in_excess]
@@ -114,8 +110,6 @@ def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.ra
     
     return df_train_eq
 
-    
-
 
 def mrmr_shorthand(X_train, y_train,X_val,y_val,K,model,score):
     feature_performance = []
@@ -128,10 +122,8 @@ def mrmr_shorthand(X_train, y_train,X_val,y_val,K,model,score):
         feature_performance.append([k,score(y_val,model.predict(X_val_reduced)),reduced_features])
     return feature_performance
 
-
 def mrmr_feature_selection(data_dev, split, 
-    min_features, max_features, step_features, folds,
-    tolerance=0.01,featureselector=mrmr.mrmr_classif,model=sklearn.linear_model.RidgeClassifier(),score=sklearn.metrics.balanced_accuracy_score):
+    min_features, max_features, step_features, folds, tolerance=0.01, featureselector=mrmr.mrmr_classif, model=sklearn.linear_model.RidgeClassifier(), score=sklearn.metrics.balanced_accuracy_score):
 
     """
     data_dev: development data in a pandas dataframe
@@ -142,10 +134,7 @@ def mrmr_feature_selection(data_dev, split,
     folds: number of repeat evaluations of one feature space size. The training and validation data will be resampled from the dev data each time. It is important that test data is not fed to this function. 
     tolerance: (Default=0.01) acceptable level of standard deviation between categories among the training and validation data. Percent categories are calculated first, then their stdev is calculated and compared to the stated tolerance
 
-
     """
-
-
     t0 = time.time()
     folded_performances = []
     i=0
@@ -191,7 +180,6 @@ def mrmr_feature_selection(data_dev, split,
         ci68 = scipy.stats.norm.interval(0.68, loc=mean_score, scale=std)
         yerr = float(np.diff(ci68))/2
         
-            
         performance_mean.append([featnum,scores,mean_score,std,ci68,yerr,features])
         number, scores, mean_score, std, ci68, yerr, features = zip(*performance_mean)
 
