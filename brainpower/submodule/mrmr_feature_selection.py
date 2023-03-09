@@ -4,11 +4,11 @@ import mrmr
 import sklearn.metrics
 import sklearn.linear_model
 import seaborn as sns
-
+import matplotlib.pyplot as plt 
 
 def mrmr_feature_selection(data_dev, split, 
     min_features, max_features, step_features, folds,
-    tolerance=0.01,model=sklearn.linear_model.RidgeClassifier(),score=sklearn.metrics.balanced_accuracy_score()):
+    tolerance=0.01,model=sklearn.linear_model.RidgeClassifier(),score=sklearn.metrics.balanced_accuracy_score):
 
     """
     data_dev: development data in a pandas dataframe
@@ -46,7 +46,7 @@ def mrmr_feature_selection(data_dev, split,
         y_traineq = train_eq['group']
         X_val = data_val.drop(columns='group')
         y_val = data_val['group']
-        feature_performances = mrmr_shorthand(X_traineq,y_traineq,X_val,y_val,list(range(min_features,max_features,step_features)),model)
+        feature_performances = mrmr_shorthand(X_traineq,y_traineq,X_val,y_val,list(range(min_features,max_features+1,step_features)),model)
         folded_performances.append(feature_performances)
         i += 1
 
@@ -54,26 +54,34 @@ def mrmr_feature_selection(data_dev, split,
 
     performance_mean = []
     for j in range(0,len(folded_performances.columns)):
-        listy = []
+        performance_values = []
         for i in range(0,len(folded_performances)):
             folded_list = folded_performances[j].iloc[i]
-            a = folded_list[0]
-            b = folded_list[1]
-            c = folded_list[2]
-            listy.append([a,b,c])
+            featnum = folded_list[0]
+            scores = folded_list[1]
+            feats = folded_list[2]
+            performance_values.append([featnum,scores,feats])
 
-        meanie = []
-        for i in range(0,len(listy)):
-            meanie.append(listy[i][1])
-        meanie = np.mean(meanie)
+        scores = []
+        for i in range(0,len(performance_values)):
+            scores.append(performance_values[i][1])
+        mean_score = np.mean(scores)
 
-        featies = []
-        for i in range(0,len(listy)):
-            featies.append(listy[i][2])
-        featies = list(np.unique(featies))
+        features = []
+        for i in range(0,len(performance_values)):
+            features.append(performance_values[i][2])
+        features = list(np.unique(features))
 
-        performance_mean.append([a,meanie,featies])
-        number, score, names = zip(*performance_mean)
-        sns.scatterplot(x=number,y=score)
+        std = np.std(scores)
+        ci68 = scipy.stats.norm.interval(0.68, loc=mean_score, scale=std)
+        yerr = float(np.diff(statstuple))/2
+        
+            
+        performance_mean.append([featnum,scores,mean_score,std,ci68,yerr,features])
+        number, scores, mean_score, std, ci68, yerr, features = zip(*performance_mean)
 
-        return performance_mean
+    performance_mean = pd.DataFrame(data=performance_mean,columns=['feature_num','ind_scores','avg_score','stdev','ci68','yerr','features'])
+    plt.scatter(x=performance_mean['feature_num'],y=performance_mean['avg_score'],marker=".", s=1)
+    plt.errorbar(x=performance_mean['feature_num'],y=performance_mean['avg_score'], c='black',elinewidth=1, yerr=performance_mean['yerr'], fmt="o")
+    plt.show()
+    return performance_mean
