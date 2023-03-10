@@ -12,6 +12,7 @@ from matplotlib import pyplot
 import scipy.stats
 import sklearn.linear_model
 import sklearn.neighbors
+from sklearn.naive_bayes import GaussianNB
 
 import sklearn.ensemble
 import time
@@ -79,5 +80,5 @@ def apply_ml_model(dev, classifier):
             
         model.fit(train_X, train_y) 
         fold_scores.append(
-            model.score(val_X, val_y))
-    return print(f"Leave-one-out cross validated scores for {classifier} model (mean, std): ({np.mean(fold_scores)}, {np.std(fold_scores)})")
+            sklearn.metrics.balanced_accuracy_score(val_y, model.predict(val_x))
+    return print(f"Leave-one-out cross validated balanced accuracy scores for {classifier} model (mean, std): ({np.mean(fold_scores)}, {np.std(fold_scores)})")
