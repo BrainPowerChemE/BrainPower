@@ -12,6 +12,7 @@ from matplotlib import pyplot
 import scipy.stats
 import sklearn.linear_model
 import sklearn.neighbors
+from sklearn.naive_bayes import GaussianNB
 
 import sklearn.ensemble
 import time
