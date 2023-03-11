@@ -17,15 +17,10 @@ from sklearn.naive_bayes import GaussianNB
 import sklearn.ensemble
 import time
 
-def calc_zscore(df):
+def rule_based_classifier(df):
     mean = np.mean(df.iloc[:,1:], axis=0)
     std = np.std(df.iloc[:,1:], axis=0)
     zscores = (df.iloc[:,1:] - mean) / std
-    return zscores
-
-dev_zscores = calc_zscore(dev)
-
-def rule_based_classifier(zscores, df):
  
     cols_1 = ["TAU"]
     cols_2 = ["1433B", "1433G", "1433Z"]
@@ -49,7 +44,7 @@ def rule_based_classifier(zscores, df):
     zscores_encoded = pd.concat([df.iloc[:,:1], zscores_encoded], axis=1)
     return zscores_encoded
 
-dev = rule_based_classifier(dev_zscores, dev)
+# dev = rule_based_classifier(dev)
 
 def apply_ml_model(dev, classifier):
     """
@@ -80,5 +75,5 @@ def apply_ml_model(dev, classifier):
             
         model.fit(train_X, train_y) 
         fold_scores.append(
-            sklearn.metrics.balanced_accuracy_score(val_y, model.predict(val_x))
+            sklearn.metrics.balanced_accuracy_score(val_y, model.predict(val_X)))
     return print(f"Leave-one-out cross validated balanced accuracy scores for {classifier} model (mean, std): ({np.mean(fold_scores)}, {np.std(fold_scores)})")
