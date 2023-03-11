@@ -18,7 +18,9 @@ def handle_scale_and_nan(df, nan_decision='drop'):
             df = df.dropna(axis=1)
     elif nan_decision == 'impute':
         imputer = missingpy.MissForest() #must be in shape of n_samples by n_features
-        df = imputer.fit_transform(df[:, 1:])
+        df_x = imputer.fit_transform(df[:, 1:])
+        df = df_x.insert(0, "group", df['group'], True)
+
     elif nan_decision == 'replace_ones': 
         df.fillna(value=1)
         
