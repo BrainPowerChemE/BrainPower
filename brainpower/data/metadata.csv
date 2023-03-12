@@ -1,0 +1,281 @@
+Public Sample ID,Linkcode,Plate,Well Position,Diagnosis,Condition,Condition Number,Age,isMale,Sex,Cutpoint,ptau181 (pg/ml),Ttau (pg/ml),AB42/AB40,AB42 (pg/ml),Abeta40,Y1 Consensus,Y2 Consensus,Y3 Consensus,Y4 Consensus,Notes,CSF availability
+TPAD0200,181,1B,E1,HC,Healthy Control CSF,1.0,66,1,Male,Cutpoint #1,103,690,0.11,2335,21148,HC,HC,HC,none,none,additional sample possibly available
+TPAD0202,301,2A,D7,HC,Healthy Control CSF,1.0,71,1,Male,Cutpoint #1,43.5,371.8,0.12,1560.3,12734.9,none,none,none,none,none,additional sample most likely available
+TPAD0203,475,2B,H8,HC,Healthy Control CSF,1.0,75,1,Male,Cutpoint #1,28.4,170.8,0.12,979.3,8106.9,none,none,none,none,none,additional sample most likely available
+TPAD0204,479,2B,G2,HC,Healthy Control CSF,1.0,75,0,Female,Cutpoint #1,47,302.8,0.07,484.3,6480.9,none,none,none,none,none,additional sample most likely available
+TPAD0205,481,3B,E8,HC,Healthy Control CSF,1.0,75,0,Female,Cutpoint #1,33.8,243.8,0.12,1056.3,9022.9,none,none,none,none,none,additional sample most likely available
+TPAD0206,489,2A,D12,HC,Healthy Control CSF,1.0,73,1,Male,Cutpoint #1,38.8,256.8,0.12,1182.3,10163.9,none,none,none,none,none,additional sample most likely available
+TPAD0207,532,2B,F12,HC,Healthy Control CSF,1.0,74,0,Female,Cutpoint #1,37.3,306.8,0.11,1041.3,9638.9,none,none,none,none,none,additional sample most likely available
+TPAD0208,534,2A,C12,HC,Healthy Control CSF,1.0,70,0,Female,Cutpoint #1,17.7,132.8,0.15,685.3,4572.9,none,none,none,none,none,additional sample most likely available
+TPAD0209,564,3B,E12,HC,Healthy Control CSF,1.0,75,1,Male,Cutpoint #1,48.9,366.8,0.11,1393.3,13109.9,none,none,none,none,none,additional sample most likely available
+TPAD0210,587,2A,C3,MCI,AD/MCI CSF,2.0,78,1,Male,Cutpoint #1,152.7,844,0.06,918,16016,MCI,MCI,none,none,none,additional sample most likely available
+TPAD0211,592,3B,F1,HC,Healthy Control CSF,1.0,81,1,Male,Cutpoint #1,35.9,259.8,0.09,790.3,8659.9,none,none,none,none,none,additional sample most likely available
+TPAD0212,611,2B,E7,HC,Healthy Control CSF,1.0,71,0,Female,Cutpoint #1,30.5,225.8,0.12,811.3,7033.9,none,none,none,none,none,additional sample most likely available
+TPAD0213,613,3A,C10,HC,Healthy Control CSF,1.0,67,1,Male,Cutpoint #1,26.2,206.8,0.11,1131.3,9856.9,HC,HC,HC,HC,none,additional sample most likely available
+TPAD0215,629,1A,A4,HC,Healthy Control CSF,1.0,79,1,Male,Cutpoint #1,34.9,244.8,0.12,790.3,6728.9,HC,HC,HC,HC,none,additional sample most likely available
+TPAD0216,638,2B,F4,HC,Healthy Control CSF,1.0,62,0,Female,Cutpoint #1,30.2,214.8,0.12,945.3,7933.9,HC,HC,HC,HC,none,additional sample most likely available
+TPAD0217,641,1A,C5,HC,Healthy Control CSF,1.0,77,0,Female,Cutpoint #1,33.5,301.8,0.12,1126.3,9399.9,none,none,none,none,none,additional sample most likely available
+TPAD0219,687,3B,F2,HC,Healthy Control CSF,1.0,76,0,Female,Cutpoint #1,38.5,289.8,0.13,1532.3,11787.9,HC,HC,HC,HC,none,additional sample most likely available
+TPAD0220,782,3A,B7,HC,Healthy Control CSF,1.0,78,1,Male,Cutpoint #1,44.1,309.8,0.12,1383.3,11248.9,none,none,none,none,none,most likely no additional sample
+TPAD0221,795,3B,G3,HC,Healthy Control CSF,1.0,73,0,Female,Cutpoint #1,31.2,250.8,0.12,1113.3,9008.9,none,none,none,none,none,most likely no additional sample
+TPAD0222,797,2A,A7,HC,Healthy Control CSF,1.0,84,1,Male,Cutpoint #1,42.9,359.8,0.13,1645.3,12809.9,none,none,none,none,none,most likely no additional sample
+TPAD0223,798,1B,H2,HC,Healthy Control CSF,1.0,65,0,Female,Cutpoint #1,34.2,279.8,0.12,1184.3,9768.9,none,none,none,none,none,most likely no additional sample
+TPAD0224,814,1A,C12,HC,Healthy Control CSF,1.0,64,1,Male,Cutpoint #1,52.8,395.8,0.12,1883.3,15385.9,none,none,none,none,none,most likely no additional sample
+TPAD0226,827,1A,B8,HC,Healthy Control CSF,1.0,64,1,Male,Cutpoint #1,38.9,302.8,0.1,961.3,10024.9,none,none,none,none,none,most likely no additional sample
+TPAD0229,841,3A,B3,HC,Healthy Control CSF,1.0,72,1,Male,Cutpoint #1,57.5,435,0.08,762,9417,none,none,none,none,none,most likely no additional sample
+TPAD0231,846,1B,G4,HC,Healthy Control CSF,1.0,62,0,Female,Cutpoint #1,28.2,270,0.15,1682,11223,HC,HC,HC,HC,none,most likely no additional sample
+TPAD0232,849,2A,D2,HC,Healthy Control CSF,1.0,64,1,Male,Cutpoint #1,23.2,190,0.14,996,7050,HC,HC,HC,HC,none,most likely no additional sample
+TPAD0233,851,3B,F5,HC,Healthy Control CSF,1.0,77,1,Male,Cutpoint #1,25.4,180.8,0.12,807.3,6653.9,none,none,none,none,none,most likely no additional sample
+TPAD0234,852,2B,G5,HC,Healthy Control CSF,1.0,71,0,Female,Cutpoint #1,34.4,243.8,0.11,957.3,8475.9,none,none,none,none,none,most likely no additional sample
+TPAD0235,858,4,D9,HC,Healthy Control CSF,1.0,72,1,Male,Cutpoint #1,34.7,239.8,0.12,1002.3,8312.9,none,none,none,none,none,most likely no additional sample
+TPAD0236,859,2A,D8,HC,Healthy Control CSF,1.0,70,0,Female,Cutpoint #1,38.4,284.8,0.13,1423.3,11253.9,none,none,none,none,none,additional sample possibly available
+TPAD0240,869,4,B1,HC,Healthy Control CSF,1.0,67,1,Male,Cutpoint #1,39.1,244,0.14,1348,9890,HC,HC,HC,none,none,most likely no additional sample
+TPAD0241,870,1B,G2,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,72,0,Female,Cutpoint #1,23.7,152,0.13,1089,8361,PD-noMCI,PD-noMCI,none,none,none,additional sample most likely available
+TPAD0243,878,4,A11,HC,Healthy Control CSF,1.0,63,0,Female,Cutpoint #1,36.9,238.8,0.1,1189.3,11572.9,none,none,none,none,none,additional sample possibly available
+TPAD0244,883,1A,D3,HC,Healthy Control CSF,1.0,77,0,Female,Cutpoint #1,44,307.8,0.1,1293.3,13336.9,none,none,none,none,none,most likely no additional sample
+TPAD0245,885,2A,D4,HC,Healthy Control CSF,1.0,72,1,Male,Cutpoint #1,37.9,264,0.13,1286,9886,HC,HC,HC,HC,none,most likely no additional sample
+TPAD0247,888,3B,E3,HC,Healthy Control CSF,1.0,67,0,Female,Cutpoint #1,42.1,297.8,0.09,1072.3,12165.9,none,none,none,none,none,most likely no additional sample
+TPAD0248,891,4,D7,HC,Healthy Control CSF,1.0,71,0,Female,Cutpoint #1,21.1,159,0.14,761,5633,HC,HC,HC,none,none,most likely no additional sample
+TPAD0249,894,2A,B4,HC,Healthy Control CSF,1.0,79,0,Female,Cutpoint #1,51,445.8,0.11,1231.3,10830.9,none,none,none,none,none,most likely no additional sample
+TPAD0250,895,2A,B10,HC,Healthy Control CSF,1.0,81,1,Male,Cutpoint #1,45.3,340.8,0.09,1067.3,12447.9,none,none,none,none,none,most likely no additional sample
+TPAD0251,896,2A,A8,HC,Healthy Control CSF,1.0,81,1,Male,Cutpoint #1,80.7,501,0.06,689,11427,HC,HC,HC,HC,none,most likely no additional sample
+TPAD0252,897,3A,C2,HC,Healthy Control CSF,1.0,76,0,Female,Cutpoint #1,38,287.8,0.1,1019.3,10411.9,none,none,none,none,none,most likely no additional sample
+TPAD0253,899,4,C6,HC,Healthy Control CSF,1.0,78,0,Female,Cutpoint #1,44.4,377.8,0.12,1606.3,13360.9,none,none,none,none,none,most likely no additional sample
+TPAD0255,915,1A,B11,HC,Healthy Control CSF,1.0,69,0,Female,Cutpoint #1,32.2,220,0.13,1700,12676,HC,HC,HC,none,none,most likely no additional sample
+TPAD0256,918,1B,E2,HC,Healthy Control CSF,1.0,64,1,Male,Cutpoint #1,40.2,262.8,0.13,1412.3,10947.9,none,none,none,none,none,most likely no additional sample
+TPAD0257,919,3A,C1,HC,Healthy Control CSF,1.0,65,1,Male,Cutpoint #1,27,206.8,0.13,860.3,6449.9,none,none,none,none,none,most likely no additional sample
+TPAD0258,920,4,B3,HC,Healthy Control CSF,1.0,65,1,Male,Cutpoint #1,28.8,310.8,0.13,797.3,6259.9,none,none,none,none,none,most likely no additional sample
+TPAD0261,929,3A,A2,HC,Healthy Control CSF,1.0,73,0,Female,Cutpoint #1,31.5,384.8,0.12,1146.3,9949.9,none,none,none,none,none,most likely no additional sample
+TPAD0262,932,3A,B1,AD,AD/MCI CSF,2.0,57,0,Female,Cutpoint #1,174.6,1161,0.06,551,9689,AD,AD,AD,none,none,additional sample possibly available
+TPAD0263,934,2A,C5,HC,Healthy Control CSF,1.0,63,1,Male,Cutpoint #1,38.5,323.8,0.13,1136.3,8700.9,none,none,none,none,none,most likely no additional sample
+TPAD0264,937,2B,E1,HC,Healthy Control CSF,1.0,75,1,Male,Cutpoint #1,91,546.8,0.07,951.3,13156.9,none,none,none,none,none,most likely no additional sample
+TPAD0265,939,2A,A11,HC,Healthy Control CSF,1.0,78,1,Male,Cutpoint #1,46.3,297.8,0.07,630.3,8874.9,none,none,none,none,none,most likely no additional sample
+TPAD0266,942,1B,H9,AD,AD/MCI CSF,2.0,61,1,Male,Cutpoint #1,22.5,220,0.14,846,6100,AD,AD,AD,none,none,most likely no additional sample
+TPAD0267,945,1B,F12,HC,Healthy Control CSF,1.0,68,1,Male,Cutpoint #1,43.4,326.8,0.11,1337.3,12407.9,none,none,none,none,none,additional sample possibly available
+TPAD0268,948,4,C2,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,74,0,Female,Cutpoint #1,32.9,215,0.13,1253,9878,PD-noMCI,PD-noMCI,PD-noMCI,PD-noMCI,none,most likely no additional sample
+TPAD0269,951,1B,G7,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,74,0,Female,Cutpoint #1,24.3,360,0.14,1137,8302,PD-noMCI,PD-noMCI,PD-noMCI,none,none,additional sample possibly available
+TPAD0270,956,3B,F7,HC,Healthy Control CSF,1.0,66,1,Male,Cutpoint #1,42.8,324.8,0.09,1019.3,10967.9,none,none,none,none,none,additional sample possibly available
+TPAD0271,957,1B,F6,HC,Healthy Control CSF,1.0,63,0,Female,Cutpoint #1,19.4,169.8,0.15,689.3,4680.9,none,none,none,none,none,most likely no additional sample
+TPAD0272,958,1A,C10,HC,Healthy Control CSF,1.0,75,1,Male,Cutpoint #1,31.6,297.8,0.11,913.3,8349.9,none,none,none,none,none,additional sample possibly available
+TPAD0273,961,2A,D6,MCI,AD/MCI CSF,2.0,64,1,Male,Cutpoint #1,99.4,576,0.05,470,10419,MCI,MCI,MCI,none,none,additional sample possibly available
+TPAD0275,963,1A,D9,HC,Healthy Control CSF,1.0,76,1,Male,Cutpoint #1,106.5,692.8,0.05,778.3,16910.9,none,none,none,none,none,additional sample most likely available
+TPAD0276,967,3A,C8,Other,PD/PDI-MCI/LBD CSF,3.0,62,0,Female,Cutpoint #1,70.4,488,0.09,1251,14095,PD-noMCI,PD-MCI,none,none,none,additional sample possibly available
+TPAD0277,970,3A,A7,HC,Healthy Control CSF,1.0,69,1,Male,Cutpoint #1,23.7,247,0.1,821,8204,HC,HC,HC,none,none,additional sample possibly available
+TPAD0278,977,1A,A11,HC,Healthy Control CSF,1.0,66,0,Female,Cutpoint #1,46.7,334.8,0.14,1490.3,11024.9,none,none,none,none,none,additional sample possibly available
+TPAD0279,978,3B,G1,HC,Healthy Control CSF,1.0,71,0,Female,Cutpoint #1,41.3,310,0.06,549,9865,HC,HC,HC,none,none,additional sample possibly available
+TPAD0280,981,4,C3,HC,Healthy Control CSF,1.0,68,0,Female,Cutpoint #1,24.3,198.8,0.13,948.3,7204.9,none,none,none,none,none,additional sample possibly available
+TPAD0281,982,1B,H11,HC,Healthy Control CSF,1.0,67,0,Female,Cutpoint #1,21.9,237.8,0.12,712.3,5702.9,none,none,none,none,none,additional sample most likely available
+TPAD0282,983,1A,B10,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,68,1,Male,Cutpoint #1,24.3,229,0.13,907,6755,PD-noMCI,PD-noMCI,PD-noMCI,none,none,additional sample possibly available
+TPAD0283,984,3B,H7,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,79,0,Female,Cutpoint #1,56.6,399,0.15,2295,15365,PD-noMCI,PD-noMCI,PD-noMCI,none,none,additional sample possibly available
+TPAD0284,985,4,A7,HC,Healthy Control CSF,1.0,72,0,Female,Cutpoint #1,59.2,499.8,0.13,1821.3,14138.9,none,none,none,none,none,additional sample most likely available
+TPAD0285,987,3A,C9,HC,Healthy Control CSF,1.0,72,1,Male,Cutpoint #1,33.7,259.8,0.11,1082.3,9706.9,none,none,none,none,none,additional sample most likely available
+TPAD0287,990,2B,H1,HC,Healthy Control CSF,1.0,75,0,Female,Cutpoint #1,30.4,191,0.14,992,7185,HC,HC,HC,none,none,most likely no additional sample
+TPAD0288,992,3B,G8,HC,Healthy Control CSF,1.0,68,1,Male,Cutpoint #1,31.9,280.8,0.11,1085.3,9515.9,none,none,none,none,none,most likely no additional sample
+TPAD0290,995,1B,H4,HC,Healthy Control CSF,1.0,66,1,Male,Cutpoint #1,41.6,319.8,0.12,1625.3,13848.9,none,none,none,none,none,additional sample possibly available
+TPAD0291,1000,3A,D2,HC,Healthy Control CSF,1.0,66,0,Female,Cutpoint #1,40,315.8,0.12,1386.3,11983.9,none,none,none,none,none,additional sample possibly available
+TPAD0292,1001,3A,B9,AD,AD/MCI CSF,2.0,70,0,Female,Cutpoint #1,98.5,771,0.09,479,5287,AD,AD,none,none,none,additional sample possibly available
+TPAD0293,1004,2B,E10,HC,Healthy Control CSF,1.0,74,1,Male,Cutpoint #1,39.9,295.8,0.12,1177.3,9598.9,none,none,none,none,none,additional sample possibly available
+TPAD0296,1010,1B,G3,HC,Healthy Control CSF,1.0,73,0,Female,Cutpoint #1,34.1,201,0.05,397,8766,HC,HC,HC,none,none,additional sample possibly available
+TPAD0297,1012,3B,H4,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,65,0,Female,Cutpoint #1,21.5,258,0.14,796,5726,PD-noMCI,PD-noMCI,PD-noMCI,none,none,additional sample most likely available
+TPAD0298,1013,4,D1,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,77,1,Male,Cutpoint #1,28.4,330,0.08,543,7180,PD-noMCI,PD-noMCI,none,none,none,additional sample most likely available
+TPAD0299,1014,1B,G1,HC,Healthy Control CSF,1.0,68,0,Female,Cutpoint #1,47.3,361.8,0.12,1707.3,14269.9,none,none,none,none,none,additional sample most likely available
+TPAD0300,1015,4,A9,HC,Healthy Control CSF,1.0,65,1,Male,Cutpoint #1,48.3,293,0.07,689,10460,HC,HC,HC,none,none,additional sample possibly available
+TPAD0301,1016,3B,E11,HC,Healthy Control CSF,1.0,65,0,Female,Cutpoint #1,37,271.8,0.11,1108.3,10263.9,none,none,none,none,none,additional sample possibly available
+TPAD0302,1018,1A,D12,HC,Healthy Control CSF,1.0,68,0,Female,Cutpoint #1,30.7,269.8,0.11,898.3,7842.9,none,none,none,none,none,additional sample most likely available
+TPAD0304,1024,3B,H8,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,66,0,Female,Cutpoint #1,26.8,221,0.14,1432,10517,PD-noMCI,PD-noMCI,PD-noMCI,none,none,additional sample most likely available
+TPAD0305,1028,1A,D7,HC,Healthy Control CSF,1.0,66,1,Male,Cutpoint #1,27.1,189,0.1,629,6564,HC,HC,HC,none,none,most likely no additional sample
+TPAD0306,1029,3A,B12,HC,Healthy Control CSF,1.0,67,1,Male,Cutpoint #1,36.2,330.8,0.12,1121.3,9704.9,none,none,none,none,none,additional sample most likely available
+TPAD0307,1030,3B,H5,HC,Healthy Control CSF,1.0,66,0,Female,Cutpoint #1,63.2,478.8,0.13,1941.3,15198.9,none,none,none,none,none,additional sample most likely available
+TPAD0308,1031,3B,E10,HC,Healthy Control CSF,1.0,78,1,Male,Cutpoint #1,72.7,595.8,0.09,1211.3,13726.9,none,none,none,none,none,additional sample possibly available
+TPAD0309,1034,3B,E4,AD,AD/MCI CSF,2.0,60,0,Female,Cutpoint #1,129.8,988,0.05,412,7743,AD,AD,none,none,none,additional sample most likely available
+TPAD0310,1035,2A,C4,Other,PD/PDI-MCI/LBD CSF,3.0,73,1,Male,Cutpoint #1,63.7,444,0.07,945,13256,MCI,MCI,MCI,none,LBD primary; AD secondary; MCI amnestic multidomain and language,additional sample most likely available
+TPAD0311,1040,2A,C9,HC,Healthy Control CSF,1.0,62,0,Female,Cutpoint #1,36.5,376.8,0.12,1256.3,10612.9,none,none,none,none,none,additional sample possibly available
+TPAD0312,1044,2A,A3,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,63,1,Male,Cutpoint #1,30.5,191,0.12,980,7984,PD-noMCI,PD-noMCI,none,none,none,additional sample most likely available
+TPAD0313,1045,2B,G3,HC,Healthy Control CSF,1.0,79,1,Male,Cutpoint #1,89.8,600.8,0.06,954.3,14817.9,none,none,none,none,none,additional sample most likely available
+TPAD0314,1047,2B,H10,HC,Healthy Control CSF,1.0,65,0,Female,Cutpoint #1,23.9,218.8,0.11,574.3,5140.9,none,none,none,none,none,additional sample most likely available
+TPAD0315,1052,2A,A4,AD,AD/MCI CSF,2.0,71,0,Female,Cutpoint #1,81.3,528,0.07,561,8424,AD,AD,AD,none,none,most likely no additional sample
+TPAD0316,1065,3B,H9,HC,Healthy Control CSF,1.0,65,0,Female,Cutpoint #1,31.6,1109.8,0.13,1010.3,7711.9,none,none,none,none,none,additional sample most likely available
+TPAD0317,1067,4,B8,HC,Healthy Control CSF,1.0,67,0,Female,Cutpoint #1,32.9,276.8,0.12,1217.3,10494.9,none,none,none,none,none,additional sample most likely available
+TPAD0318,1072,1A,B5,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,71,1,Male,Cutpoint #1,34.7,298,0.15,1515,10404,PD-noMCI,PD-noMCI,PD-noMCI,none,none,additional sample most likely available
+TPAD0319,1077,2B,F7,HC,Healthy Control CSF,1.0,73,1,Male,Cutpoint #1,41.1,291.8,0.12,1319.3,11167.9,none,none,none,none,none,additional sample most likely available
+TPAD0320,1078,1A,A2,MCI,AD/MCI CSF,2.0,83,0,Female,Cutpoint #1,67.8,456,0.07,926,13142,MCI,MCI,none,none,none,additional sample most likely available
+TPAD0321,1080,2A,C6,HC,Healthy Control CSF,1.0,64,0,Female,Cutpoint #1,30,207.8,0.12,967.3,8400.9,none,none,none,none,none,additional sample most likely available
+TPAD0322,1083,2A,A5,HC,Healthy Control CSF,1.0,73,1,Male,Cutpoint #1,71.3,483.8,0.07,1069.3,15975.9,none,none,none,none,none,additional sample most likely available
+TPAD0323,1084,3A,A9,LBD,PD/PDI-MCI/LBD CSF,3.0,58,1,Male,Cutpoint #1,71.7,502,0.07,583,8425,LBD,LBD,none,none,none,additional sample most likely available
+TPAD0324,1088,3A,B2,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,79,1,Male,Cutpoint #1,19.2,283,0.14,918,6665,PD-MCI,PD-MCI,none,none,none,additional sample most likely available
+TPAD0325,1091,1A,B9,MCI,AD/MCI CSF,2.0,78,1,Male,Cutpoint #1,54,367,0.06,460,7580,MCI,MCI,none,none,none,additional sample most likely available
+TPAD0327,1096,2B,E11,HC,Healthy Control CSF,1.0,89,1,Male,Cutpoint #1,34.5,267.8,0.11,759.3,7041.9,none,none,none,none,none,additional sample most likely available
+TPAD0328,1099,2B,H3,HC,Healthy Control CSF,1.0,71,0,Female,Cutpoint #1,52.9,361.8,0.07,866.3,12316.9,none,none,none,none,none,additional sample most likely available
+TPAD0330,1105,1B,F7,HC,Healthy Control CSF,1.0,68,1,Male,Cutpoint #1,43.4,318.8,0.13,1488.3,11635.9,none,none,none,none,none,additional sample most likely available
+TPAD0331,1111,2B,E4,HC,Healthy Control CSF,1.0,70,0,Female,Cutpoint #1,26.2,217,0.13,1143,9078,HC,HC,none,none,none,additional sample most likely available
+TPAD0332,1113,1A,D5,HC,Healthy Control CSF,1.0,73,1,Male,Cutpoint #1,33.1,229,0.14,1155,8167,HC,HC,none,none,none,additional sample most likely available
+TPAD0333,1116,1B,F10,HC,Healthy Control CSF,1.0,70,1,Male,Cutpoint #1,43.7,295.8,0.12,1206.3,10045.9,none,none,none,none,none,additional sample most likely available
+TPAD0334,1118,2A,B3,HC,Healthy Control CSF,1.0,63,0,Female,Cutpoint #1,61.9,484,0.05,734,14070,HC,HC,none,none,none,additional sample possibly available
+TPAD0335,1120,4,C12,AD,AD/MCI CSF,2.0,58,0,Female,Cutpoint #1,91.7,664,0.06,484,8720,AD,AD,none,none,none,additional sample possibly available
+TPAD0336,1126,4,C11,Other,Healthy Control CSF,1.0,61,0,Female,Cutpoint #1,41.4,355,0.15,1924,12653,MCI,HC,none,none,FH of DLB,additional sample possibly available
+TPAD0337,1132,3A,B8,HC,Healthy Control CSF,1.0,73,0,Female,Cutpoint #1,35.2,231,0.1,892,9188,HC,HC,none,none,none,additional sample most likely available
+TPAD0339,1145,3B,F11,Other,AD/MCI CSF,2.0,78,1,Male,Cutpoint #1,45.4,340,0.13,1679,13225,HC,MCI,none,none,Y1: normal with concerns in cognition and movement (poss LBD); Y2: MCI amnestic multi domain + executive,additional sample possibly available
+TPAD0342,1163,1A,A7,HC,Healthy Control CSF,1.0,68,0,Female,Cutpoint #1,75.7,409.8,0.07,472.3,6468.9,none,none,none,none,none,additional sample most likely available
+TPAD0343,1167,3A,D9,HC,Healthy Control CSF,1.0,67,0,Female,Cutpoint #1,35.4,298,0.14,1778,12383,HC,HC,none,none,label =11677?,additional sample most likely available
+TPAD0344,1168,4,C8,AD,AD/MCI CSF,2.0,81,0,Female,Cutpoint #1,81.2,524,0.05,396,7252,AD,AD,none,none,none,most likely no additional sample
+TPAD0345,1171,1B,G11,MCI,AD/MCI CSF,2.0,78,1,Male,Cutpoint #1,28.6,219,0.14,1476,10471,MCI,MCI,none,none,none,additional sample most likely available
+TPAD0348,1179,1A,B2,HC,Healthy Control CSF,1.0,59,0,Female,Cutpoint #1,26.1,173,0.15,1545,10112,HC,none,none,none,none,additional sample possibly available
+TPAD0349,1180,2A,B11,HC,Healthy Control CSF,1.0,63,0,Female,Cutpoint #1,62.6,459,0.08,996,13239,HC,HC,none,none,none,additional sample most likely available
+TPAD0350,1181,1B,F11,Other,PD/PDI-MCI/LBD CSF,3.0,71,1,Male,Cutpoint #1,24.1,540,0.08,323,4090,LBD,none,none,none,LBD primary; Secondary: possible Alzheimer's disease / R occipital stroke,additional sample most likely available
+TPAD0352,1185,4,B6,HC,Healthy Control CSF,1.0,70,0,Female,Cutpoint #1,168.1,879.8,0.06,829.3,13403.9,none,none,none,none,none,additional sample most likely available
+TPAD0353,1187,1A,A9,LBD,PD/PDI-MCI/LBD CSF,3.0,61,0,Female,Cutpoint #1,72,558,0.07,363,5415,LBD,LBD,none,none,none,additional sample possibly available
+TPAD0354,1189,2A,C1,HC,Healthy Control CSF,1.0,72,0,Female,Cutpoint #1,44,276,0.06,528,8396,HC,HC,none,none,none,additional sample most likely available
+TPAD0355,1190,1A,C1,HC,Healthy Control CSF,1.0,69,0,Female,Cutpoint #1,37.7,369.8,0.11,1066.3,9426.9,none,none,none,none,none,additional sample most likely available
+TPAD0356,1192,2B,H11,HC,Healthy Control CSF,1.0,65,0,Female,Cutpoint #1,31,310.8,0.11,914.3,8011.9,none,none,none,none,none,additional sample most likely available
+TPAD0357,1193,4,D12,HC,Healthy Control CSF,1.0,63,0,Female,Cutpoint #1,42.8,298.8,0.09,711.3,8068.9,none,none,none,none,none,additional sample most likely available
+TPAD0358,1197,2B,H6,MCI,AD/MCI CSF,2.0,79,1,Male,Cutpoint #1,23.1,362,0.13,1047,8214,MCI,none,none,none,none,additional sample most likely available
+TPAD0361,1205,2A,B1,AD,AD/MCI CSF,2.0,63,0,Female,Cutpoint #1,147.4,882,0.07,898,12586,AD,AD,none,none,none,additional sample most likely available
+TPAD0362,1206,3B,G7,HC,Healthy Control CSF,1.0,76,0,Female,Cutpoint #1,57.1,523.3,0.08,763.3,9887,HC,HC,none,none,none,additional sample most likely available
+TPAD0363,1207,3A,A8,HC,Healthy Control CSF,1.0,78,1,Male,Cutpoint #1,67.1,423,0.08,1000,12425,HC,HC,none,none,none,additional sample most likely available
+TPAD0364,1208,4,D4,HC,Healthy Control CSF,1.0,36,1,Male,Cutpoint #1,67.7,413,0.06,317,5547,HC,HC,none,none,none,additional sample possibly available
+TPAD0365,1209,2B,G8,HC,Healthy Control CSF,1.0,72,1,Male,Cutpoint #1,36.8,440,0.11,700,6375,HC,HC,none,none,none,additional sample most likely available
+TPAD0366,1210,1B,E10,HC,Healthy Control CSF,1.0,65,0,Female,Cutpoint #1,12.7,219,0.13,546,4339,HC,HC,none,none,none,additional sample most likely available
+TPAD0367,1211,1A,D1,MCI,AD/MCI CSF,2.0,74,0,Female,Cutpoint #1,85.3,533,0.06,647,10629,MCI,MCI,none,none,none,additional sample most likely available
+TPAD0368,1213,4,C5,HC,Healthy Control CSF,1.0,80,1,Male,Cutpoint #1,38.5,302,0.14,1488,10970,HC,HC,none,none,none,additional sample possibly available
+TPAD0369,1220,1B,F8,Other,AD/MCI CSF,2.0,79,0,Female,Cutpoint #1,33.7,215,0.13,1556,11817,MCI,MCI,none,none,MCI amnestic multi-domain & language (stroke contributing ?) vascular etiology since negative PET and AD CSF markers,additional sample possibly available
+TPAD0370,1222,4,A10,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,62,1,Male,Cutpoint #1,27.4,147.3,0.12,900.3,7826,PD-noMCI,none,none,none,none,additional sample most likely available
+TPAD0371,1223,3B,E1,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,77,0,Female,Cutpoint #1,53.4,349.3,0.07,711.3,10871,PD-noMCI,PD-noMCI,none,none,Y2: with concerns - need full cog testing next year,additional sample possibly available
+TPAD0372,1226,1B,E9,MCI,AD/MCI CSF,2.0,70,1,Male,Cutpoint #1,83.5,450,0.07,825,12000,MCI,none,none,none,none,additional sample most likely available
+TPAD0373,1229,1B,G10,HC,Healthy Control CSF,1.0,69,0,Female,Cutpoint #1,48.4,392,0.13,1596,12716,HC,HC,none,none,none,additional sample most likely available
+TPAD0374,1230,2A,B7,HC,Healthy Control CSF,1.0,67,1,Male,Cutpoint #1,37.4,281.8,0.12,1150.3,9300.9,none,none,none,none,none,additional sample most likely available
+TPAD0375,1231,3B,G10,HC,Healthy Control CSF,1.0,67,0,Female,Cutpoint #1,59,409.8,0.13,1598.3,12370.9,none,none,none,none,none,additional sample most likely available
+TPAD0376,1232,1A,B12,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,67,0,Female,Cutpoint #1,30.3,353.3,0.12,1167.3,9601,PD-noMCI,PD-noMCI,none,none,none,additional sample most likely available
+TPAD0377,1236,3B,G6,AD,AD/MCI CSF,2.0,82,0,Female,Cutpoint #1,113.9,776.3,0.07,638.3,9806,AD,AD,none,none,AD pathology primary LBD contributing,additional sample most likely available
+TPAD0378,1237,2B,H4,AD,AD/MCI CSF,2.0,73,1,Male,Cutpoint #1,397.9,1926.3,0.04,624.3,14096,AD,AD,none,none,none,additional sample most likely available
+TPAD0379,1241,1A,B4,AD,AD/MCI CSF,2.0,76,0,Female,Cutpoint #1,96.9,658.3,0.07,842.3,12306,AD,AD,none,none,none,additional sample most likely available
+TPAD0380,1243,4,B7,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,69,1,Male,Cutpoint #1,29.8,174.3,0.12,1148.3,9654,PD-noMCI,PD-noMCI,none,none,Y2: with concerns in executive function,additional sample most likely available
+TPAD0381,1245,4,B4,MCI,AD/MCI CSF,2.0,45,1,Male,Cutpoint #1,29.7,207.3,0.12,944.3,7743,MCI,MCI,none,none,PSEN mutation; MCI amnestic multidomain executive and visuospatial,additional sample most likely available
+TPAD0382,1248,1B,G5,Other,AD/MCI CSF,2.0,82,0,Female,Cutpoint #1,270.8,1838.3,0.05,788.3,15575,HC,MCI,none,none,MCI amnestic multidomain and visuospatial,additional sample most likely available
+TPAD0383,1251,2B,F3,AD,AD/MCI CSF,2.0,67,1,Male,Cutpoint #1,103.7,756.3,0.09,669.3,7699,AD,AD,none,none,none,additional sample most likely available
+TPAD0384,1255,4,A4,HC,Healthy Control CSF,1.0,70,1,Male,Cutpoint #1,21.2,110.3,0.13,892.3,7023,HC,none,none,none,none,additional sample most likely available
+TPAD0385,1262,3A,C7,AD,AD/MCI CSF,2.0,58,0,Female,Cutpoint #1,127.5,768.3,0.07,639.3,9641,AD,none,none,none,none,additional sample most likely available
+TPAD0386,1269,3A,C4,HC,Healthy Control CSF,1.0,54,0,Female,Cutpoint #1,22.4,115.3,0.12,1231.3,10565,HC,none,none,none,none,most likely no additional sample
+TPAD0388,1279,1B,E8,HC,Healthy Control CSF,1.0,68,0,Female,Cutpoint #1,48.8,282.3,0.06,578.3,9273,HC,none,none,none,none,additional sample most likely available
+TPAD0389,101407,3A,D4,AD,AD/MCI CSF,2.0,56,0,Female,Cutpoint #1,189,1190.3,0.07,499.3,7667,none,none,none,none,none,most likely no additional sample
+TPAD0390,111188,1B,F4,MCI,AD/MCI CSF,2.0,68,0,Female,Cutpoint #1,89.4,558.3,0.07,647.3,9420,none,none,none,none,none,no additional sample possible
+TPAD0392,121060,3B,F6,MCI,AD/MCI CSF,2.0,73,0,Female,Cutpoint #1,52,377.3,0.11,1281.3,11496,none,none,none,none,none,no additional sample possible
+TPAD0393,121091,3A,D10,MCI,AD/MCI CSF,2.0,75,1,Male,Cutpoint #1,107.9,650.3,0.07,735.3,10689,none,none,none,none,none,no additional sample possible
+TPAD0394,121151,4,A8,MCI,AD/MCI CSF,2.0,64,1,Male,Cutpoint #1,22.8,242.3,0.13,1028.3,8204,none,none,none,none,none,most likely no additional sample
+TPAD0395,121235,2A,A10,MCI,AD/MCI CSF,2.0,75,1,Male,Cutpoint #1,63.5,372.3,0.08,584.3,7143,none,none,none,none,none,most likely no additional sample
+TPAD0396,121249,1B,E12,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,60.1,1,Male,Cutpoint #2,,203,0.14,831,6014,none,none,none,none,none,no additional sample possible
+TPAD0397,121254,4,B5,PDD,PD/PDI-MCI/LBD CSF,3.0,67.6,0,Female,Cutpoint #2,,202,0.22,389,1783,none,none,none,none,none,no additional sample possible
+TPAD0398,121257,3B,F12,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,62.9,0,Female,Cutpoint #1,37.5,246.3,0.12,1160.3,9479,none,none,none,none,none,no additional sample possible
+TPAD0399,121310,2A,D11,PDD,PD/PDI-MCI/LBD CSF,3.0,74.2,1,Male,Cutpoint #2,66.4,355,0.05,261,5303,none,none,none,none,none,most likely no additional sample
+TPAD0400,121320,1A,A6,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,68.8,1,Male,Cutpoint #2,29.2,341,0.12,745,6064,none,none,none,none,none,most likely no additional sample
+TPAD0401,121334,1B,F5,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,80.1,1,Male,Cutpoint #2,34,333,0.07,312,4704,none,none,none,none,none,additional sample possibly available
+TPAD0403,121347,3B,G11,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,80.2,1,Male,Cutpoint #2,30.9,189,0.12,756,6143,none,none,none,none,none,most likely no additional sample
+TPAD0405,121351,4,B2,MCI,AD/MCI CSF,2.0,72,1,Male,Cutpoint #1,81.5,544.3,0.07,541.3,8226,none,none,none,none,none,additional sample most likely available
+TPAD0406,121356,3A,D3,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,64.7,1,Male,Cutpoint #2,46,1017,0.07,530,7176,none,none,none,none,none,additional sample possibly available
+TPAD0407,121370,2A,D9,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,59.6,0,Female,Cutpoint #2,35.4,302,0.12,1079,9050,none,none,none,none,none,most likely no additional sample
+TPAD0408,121376,1B,H10,DLB,PD/PDI-MCI/LBD CSF,3.0,73,1,Male,Cutpoint #1,57.1,253.3,0.09,426.3,4665,none,none,none,none,none,most likely no additional sample
+TPAD0411,121641,2B,E9,MCI,AD/MCI CSF,2.0,72,1,Male,Cutpoint #1,93.4,556.3,0.07,499.3,7391,none,none,none,none,none,no additional sample possible
+TPAD0412,121652,1B,E6,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,60.6,1,Male,Cutpoint #2,32.1,163,0.11,534,4670,none,none,none,none,none,additional sample possibly available
+TPAD0413,131003,2A,C10,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,58.3,1,Male,Cutpoint #2,40,241,0.12,758,6247,none,none,none,none,none,most likely no additional sample
+TPAD0414,131013,3A,A11,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,63.3,1,Male,Cutpoint #2,55.7,369,0.12,1305,10831,none,none,none,none,none,most likely no additional sample
+TPAD0415,131018,3A,D5,HC,Healthy Control CSF,1.0,63,1,Male,Cutpoint #2,23.7,159,0.1,600,5789,none,none,none,none,none,no additional sample possible
+TPAD0417,131065,2B,E8,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,50.4,1,Male,Cutpoint #2,40.3,823,0.14,764,5462,none,none,none,none,none,no additional sample possible
+TPAD0418,131085,2B,F9,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,66,0,Female,Cutpoint #2,32.5,587,0.12,629,5084,none,none,none,none,none,no additional sample possible
+TPAD0419,131095,2B,G10,MCI,AD/MCI CSF,2.0,61,1,Male,Cutpoint #1,36.7,1302.3,0.09,827.3,8925,none,none,none,none,none,no additional sample possible
+TPAD0421,131113,3A,C12,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,57.9,0,Female,Cutpoint #2,21.4,139,0.11,334,3026,none,none,none,none,none,no additional sample possible
+TPAD0422,131134,1A,A12,MCI,AD/MCI CSF,2.0,66,1,Male,Cutpoint #1,73.3,463.3,0.07,600.3,9193,none,none,none,none,none,most likely no additional sample
+TPAD0423,131135,2B,G9,HC,Healthy Control CSF,1.0,56.9,1,Male,Cutpoint #2,27.9,158,0.11,741,6479,none,none,none,none,none,no additional sample possible
+TPAD0424,131137,1B,F1,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,51.5,0,Female,Cutpoint #2,30.3,205,0.11,855,7770,none,none,none,none,none,no additional sample possible
+TPAD0425,131141,3A,A12,HC,Healthy Control CSF,1.0,56.7,1,Male,Cutpoint #2,28.4,169,0.09,449,5240,none,none,none,none,none,no additional sample possible
+TPAD0426,131183,3A,D7,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,65.4,1,Male,Cutpoint #2,26.3,229,0.11,559,5000,none,none,none,none,none,no additional sample possible
+TPAD0427,131190,4,C4,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,64,1,Male,Cutpoint #2,41.2,343,0.12,760,6294,none,none,none,none,none,no additional sample possible
+TPAD0428,131201,1A,C8,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,61.4,1,Male,Cutpoint #2,38.6,275,0.14,832,5834,none,none,none,none,none,no additional sample possible
+TPAD0429,131242,2B,G6,HC,Healthy Control CSF,1.0,75.8,0,Female,Cutpoint #2,22.4,142,0.06,282,4417,none,none,none,none,none,no additional sample possible
+TPAD0430,131276,3A,D12,HC,Healthy Control CSF,1.0,81,1,Male,Cutpoint #1,45.5,323.8,0.1,1175.3,11316.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0431,131286,4,A3,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,65.8,0,Female,Cutpoint #2,41.9,293,0.09,642,7398,none,none,none,none,none,no additional sample possible
+TPAD0432,131291,4,A5,HC,Healthy Control CSF,1.0,57.8,0,Female,Cutpoint #2,20.3,116,0.13,519,4091,none,none,none,none,none,most likely no additional sample
+TPAD0433,131326,4,C9,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,72.2,0,Female,Cutpoint #2,30.4,198,0.1,512,4968,none,none,none,none,none,no additional sample possible
+TPAD0434,131327,1A,D11,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,69.9,1,Male,Cutpoint #2,35.7,230,0.12,793,6346,none,none,none,none,none,no additional sample possible
+TPAD0435,131351,3B,E9,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,70.6,0,Female,Cutpoint #2,32.5,342,0.11,475,4252,none,none,none,none,none,additional sample possibly available
+TPAD0436,131379,2A,A1,PDD,PD/PDI-MCI/LBD CSF,3.0,78.3,1,Male,Cutpoint #2,41.6,268,0.11,862,7961,none,none,none,none,none,no additional sample possible
+TPAD0437,131387,1B,H3,PDD,PD/PDI-MCI/LBD CSF,3.0,78.7,1,Male,Cutpoint #2,155.5,851,0.06,644,10336,none,none,none,none,none,no additional sample possible
+TPAD0438,131432,3B,H1,MCI,AD/MCI CSF,2.0,73,1,Male,Cutpoint #1,73.8,488.3,0.07,701.3,9997,none,none,none,none,none,additional sample possibly available
+TPAD0439,131447,2A,B8,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,71.3,1,Male,Cutpoint #2,31.7,195,0.14,1141,8130,none,none,none,none,none,no additional sample possible
+TPAD0440,141002,3A,A5,MCI,AD/MCI CSF,2.0,82,1,Male,Cutpoint #1,127.9,689.3,0.05,600.3,11278,none,none,none,none,none,most likely no additional sample
+TPAD0441,141006,2B,G12,MCI,AD/MCI CSF,2.0,76,0,Female,Cutpoint #1,124,793.3,0.07,559.3,8227,none,none,none,none,none,most likely no additional sample
+TPAD0442,141019,1B,E3,MCI,AD/MCI CSF,2.0,72,1,Male,Cutpoint #1,108.7,627.3,0.07,620.3,8434,none,none,none,none,none,most likely no additional sample
+TPAD0443,141041,2A,C8,AD,AD/MCI CSF,2.0,65,0,Female,Cutpoint #1,48.1,279.3,0.1,601.3,6134,none,none,none,none,none,additional sample possibly available
+TPAD0444,141064,4,D6,MCI,AD/MCI CSF,2.0,68,1,Male,Cutpoint #1,254.4,1592.3,0.05,623.3,11709,none,none,none,none,none,most likely no additional sample
+TPAD0445,141070,2B,F5,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,73.7,1,Male,Cutpoint #2,48.3,325,0.08,490,6139,none,none,none,none,none,additional sample most likely available
+TPAD0446,141074,2B,E6,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,80,1,Male,Cutpoint #2,58.8,374,0.07,524,7286,none,none,none,none,none,additional sample most likely available
+TPAD0448,141085,1A,D10,AD,AD/MCI CSF,2.0,67,0,Female,Cutpoint #1,72.9,386.3,0.07,683.3,9346,none,none,none,none,none,most likely no additional sample
+TPAD0449,141088,2B,H2,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,68,0,Female,Cutpoint #2,26.1,236,0.15,876,6017,none,none,none,none,none,additional sample most likely available
+TPAD0450,141091,1B,H7,HC,Healthy Control CSF,1.0,75,1,Male,Cutpoint #2,30.2,178,0.12,959,7815,none,none,none,none,none,additional sample most likely available
+TPAD0451,141099,3A,B6,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,67.4,1,Male,Cutpoint #2,62.3,363,0.05,603,11146,none,none,none,none,none,additional sample most likely available
+TPAD0452,141112,3B,E7,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,65.8,1,Male,Cutpoint #2,16.4,93,0.11,564,4948,none,none,none,none,none,additional sample most likely available
+TPAD0453,141124,3B,H12,MCI,AD/MCI CSF,2.0,73,1,Male,Cutpoint #1,121.5,779.3,0.05,772.3,15472,none,none,none,none,none,additional sample possibly available
+TPAD0454,141130,4,D3,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,73.5,1,Male,Cutpoint #2,26.4,165,0.14,1072,7827,none,none,none,none,none,additional sample most likely available
+TPAD0455,141132,4,D11,PDD,PD/PDI-MCI/LBD CSF,3.0,83.5,0,Female,Cutpoint #2,72.2,464,0.05,515,9513,none,none,none,none,none,additional sample possibly available
+TPAD0456,141162,3B,G2,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,67.5,1,Male,Cutpoint #2,29.3,1220,0.13,1075,8264,none,none,none,none,none,additional sample possibly available
+TPAD0457,141164,3B,G4,HC,Healthy Control CSF,1.0,62,1,Male,Cutpoint #1,37.8,222.3,0.12,1222.3,10505,none,none,none,none,none,additional sample possibly available
+TPAD0458,141168,1A,C3,AD,AD/MCI CSF,2.0,68,1,Male,Cutpoint #1,25.2,169.3,0.12,1020.3,8795,none,none,none,none,none,additional sample possibly available
+TPAD0459,141171,3B,G9,AD,AD/MCI CSF,2.0,68,0,Female,Cutpoint #1,70.3,532.3,0.09,613.3,7185,none,none,none,none,none,additional sample most likely available
+TPAD0460,141175,3A,A1,PDD,PD/PDI-MCI/LBD CSF,3.0,64.2,1,Male,Cutpoint #2,19.3,116,0.12,493,4104,none,none,none,none,none,no additional sample possible
+TPAD0461,141177,1A,C2,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,63.1,0,Female,Cutpoint #2,17.8,136,0.13,515,4106,none,none,none,none,none,most likely no additional sample
+TPAD0462,141179,2B,H5,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,56.8,0,Female,Cutpoint #2,24.1,153,0.12,946,7699,none,none,none,none,none,additional sample possibly available
+TPAD0463,141180,1A,D4,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,70.3,0,Female,Cutpoint #2,62.1,1267,0.08,748,9646,none,none,none,none,none,additional sample possibly available
+TPAD0464,141198,3B,E2,HC,Healthy Control CSF,1.0,82,1,Male,Cutpoint #1,49.1,387.3,0.12,1512.3,12948,none,none,none,none,none,additional sample most likely available
+TPAD0465,141201,3A,C5,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,85.8,1,Male,Cutpoint #2,158,993,0.06,879,15201,none,none,none,none,none,additional sample most likely available
+TPAD0466,141202,2B,E12,PDD,PD/PDI-MCI/LBD CSF,3.0,69.3,0,Female,Cutpoint #2,80.1,525,0.08,503,6262,none,none,none,none,none,additional sample most likely available
+TPAD0467,141210,1A,A8,HC,Healthy Control CSF,1.0,76,1,Male,Cutpoint #1,33.6,298.3,0.11,1133.3,10421,none,none,none,none,none,additional sample most likely available
+TPAD0468,141214,3A,C3,MCI,AD/MCI CSF,2.0,64,0,Female,Cutpoint #1,82.8,452.3,0.07,654.3,9552,none,none,none,none,none,additional sample most likely available
+TPAD0469,141217,1B,G9,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,71,1,Male,Cutpoint #2,36.6,233,0.13,1099,8432,none,none,none,none,none,additional sample most likely available
+TPAD0470,141222,1A,C9,HC,Healthy Control CSF,1.0,84,1,Male,Cutpoint #1,40.8,388.3,0.1,1318.3,12624,none,none,none,none,none,additional sample most likely available
+TPAD0472,141232,4,A2,HC,Healthy Control CSF,1.0,70.6,0,Female,Cutpoint #2,48.6,294,0.06,613,9780,none,none,none,none,none,additional sample most likely available
+TPAD0474,141262,4,D10,HC,Healthy Control CSF,1.0,55,0,Female,Cutpoint #1,30,177.3,0.09,976.3,10784,none,none,none,none,none,additional sample most likely available
+TPAD0476,141295,4,B10,HC,Healthy Control CSF,1.0,58,0,Female,Cutpoint #1,24.5,122.3,0.11,1137.3,10526,none,none,none,none,none,additional sample most likely available
+TPAD0477,141304,3B,H11,HC,Healthy Control CSF,1.0,79,0,Female,Cutpoint #1,21.3,122.3,0.13,930.3,7411,none,none,none,none,none,additional sample most likely available
+TPAD0478,141308,2A,B12,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,78.4,1,Male,Cutpoint #2,44.1,252,0.08,477,5799,none,none,none,none,none,additional sample most likely available
+TPAD0479,141312,2B,G7,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,73.4,0,Female,Cutpoint #2,34.9,249,0.14,1193,8566,none,none,none,none,none,most likely no additional sample
+TPAD0480,141318,2B,G1,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,76,1,Male,Cutpoint #2,55.7,345,0.06,383,6092,none,none,none,none,none,additional sample most likely available
+TPAD0481,141327,3B,F10,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,79.7,1,Male,Cutpoint #2,43.2,291,0.13,1682,12737,none,none,none,none,none,additional sample most likely available
+TPAD0482,141335,1A,A3,PDD,PD/PDI-MCI/LBD CSF,3.0,64.7,1,Male,Cutpoint #2,31.2,178,0.08,345,4191,none,none,none,none,none,additional sample most likely available
+TPAD0483,141336,1B,H6,PD-MCI,PD/PDI-MCI/LBD CSF,3.0,69.2,1,Male,Cutpoint #2,35.6,285,0.1,576,5656,none,none,none,none,none,additional sample most likely available
+TPAD0484,141337,3A,D11,HC,Healthy Control CSF,1.0,69.5,0,Female,Cutpoint #2,52.6,359,0.12,1478,11910,none,none,none,none,none,additional sample most likely available
+TPAD0485,141345,3B,F4,HC,Healthy Control CSF,1.0,79.3,0,Female,Cutpoint #2,27.4,169,0.13,806,6188,none,none,none,none,none,additional sample most likely available
+TPAD0486,141346,4,B12,HC,Healthy Control CSF,1.0,64.8,1,Male,Cutpoint #2,46.7,343,0.15,1658,11275,none,none,none,none,none,additional sample most likely available
+TPAD0487,141348,1A,C6,MCI,AD/MCI CSF,2.0,75,0,Female,Cutpoint #1,139.2,975.8,0.05,864.3,16860.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0488,141352,2A,B6,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,58.4,0,Female,Cutpoint #2,26.8,178,0.1,592,5958,none,none,none,none,none,additional sample most likely available
+TPAD0489,141353,1A,C7,HC,Healthy Control CSF,1.0,81,0,Female,Cutpoint #1,49.4,360.8,0.1,1169.3,11338.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0490,141361,2A,C2,HC,Healthy Control CSF,1.0,65.2,0,Female,Cutpoint #2,30.6,196,0.12,961,7836,none,none,none,none,none,additional sample most likely available
+TPAD0491,141362,2A,A9,HC,Healthy Control CSF,1.0,62,0,Female,Cutpoint #2,36.5,269,0.13,1292,9874,none,none,none,none,none,additional sample most likely available
+TPAD0493,141365,3B,F3,PDD,PD/PDI-MCI/LBD CSF,3.0,72.5,1,Male,Cutpoint #2,35.8,207,0.07,296,4392,none,none,none,none,none,additional sample most likely available
+TPAD0495,141372,2B,H12,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,62.5,0,Female,Cutpoint #2,19,100,0.12,526,4300,none,none,none,none,none,additional sample most likely available
+TPAD0496,141374,2B,F2,PD-noMCI,PD/PDI-MCI/LBD CSF,3.0,73.3,0,Female,Cutpoint #2,33.8,207,0.09,899,9769,none,none,none,none,none,additional sample most likely available
+TPAD0497,141387,1A,B6,HC,Healthy Control CSF,1.0,65.6,0,Female,Cutpoint #2,23.5,169,0.14,909,6731,none,none,none,none,none,additional sample most likely available
+TPAD0498,141433,1B,E11,HC,Healthy Control CSF,1.0,71,1,Male,Cutpoint #1,28.2,178.3,0.11,835.3,7745,none,none,none,none,none,additional sample most likely available
+TPAD0499,141435,1A,D2,HC,Healthy Control CSF,1.0,75,0,Female,Cutpoint #1,65.9,429.3,0.06,653.3,10795,none,none,none,none,none,additional sample possibly available
+TPAD0500,141440,1B,E5,HC,Healthy Control CSF,1.0,83,0,Female,Cutpoint #1,53.2,400.8,0.11,1606.3,14998.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0501,141450,3A,B5,HC,Healthy Control CSF,1.0,60,1,Male,Cutpoint #1,20.4,107.3,0.12,964.3,8084,none,none,none,none,mislabeled in orig meta 1414450,additional sample most likely available
+TPAD0502,151009,3A,A4,HC,Healthy Control CSF,1.0,73,1,Male,Cutpoint #1,44.5,316.8,0.09,982.3,11149.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0504,151019,2A,D5,PDD,PD/PDI-MCI/LBD CSF,3.0,75.2,1,Male,Cutpoint #2,21.2,131,0.09,326,3717,none,none,none,none,none,additional sample most likely available
+TPAD0506,151036,1B,G12,HC,Healthy Control CSF,1.0,74,1,Male,Cutpoint #1,41.5,248.3,0.1,1296.3,12902,none,none,none,none,none,additional sample most likely available
+TPAD0507,151068,4,C10,HC,Healthy Control CSF,1.0,84,0,Female,Cutpoint #1,37.2,277.8,0.12,997.3,8245.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0508,151071,2B,F6,HC,Healthy Control CSF,1.0,71,1,Male,Cutpoint #1,36.3,284.8,0.11,1128.3,10556.9,none,none,none,none,Added meta,additional sample possibly available
+TPAD0509,151077,1B,F3,HC,Healthy Control CSF,1.0,70,0,Female,Cutpoint #1,60.4,485.8,0.06,736.3,12648.9,none,none,none,none,Added meta,additional sample possibly available
+TPAD0511,151096,2B,F8,AD,AD/MCI CSF,2.0,57,1,Male,Cutpoint #1,99.4,603.3,0.07,585.3,7926,none,none,none,none,none,no additional sample possible
+TPAD0512,151128,2B,E5,HC,Healthy Control CSF,1.0,76,1,Male,Cutpoint #1,40.1,299.8,0.13,1165.3,9113.9,none,none,none,none,Added meta,additional sample possibly available
+TPAD0513,151132,3A,B10,HC,Healthy Control CSF,1.0,69,0,Female,Cutpoint #1,41.4,267.8,0.11,1097.3,9759.9,none,none,none,none,Added meta,most likely no additional sample
+TPAD0514,151158,3B,H10,HC,Healthy Control CSF,1.0,71,0,Female,Cutpoint #1,33.2,216.8,0.12,728.3,6032.9,none,none,none,none,Added meta,most likely no additional sample
+TPAD0515,151178,1A,A1,HC,Healthy Control CSF,1.0,73,1,Male,Cutpoint #1,31.2,275.8,0.13,790.3,6257.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0516,151187,1B,H1,HC,Healthy Control CSF,1.0,74,0,Female,Cutpoint #1,52.9,439.8,0.06,643.3,11359.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0517,151190,2B,F11,HC,Healthy Control CSF,1.0,84,0,Female,Cutpoint #1,44.4,358.8,0.12,1408.3,11561.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0518,151192,2A,B9,MCI,AD/MCI CSF,2.0,72,0,Female,Cutpoint #1,93.8,566.8,0.06,588.3,9248.9,none,none,none,none,Added meta,most likely no additional sample
+TPAD0519,151214,1B,H8,HC,Healthy Control CSF,1.0,74,1,Male,Cutpoint #1,36.3,326.8,0.13,888.3,6963.9,none,none,none,none,Added meta,most likely no additional sample
+TPAD0520,151217,3A,A6,HC,Healthy Control CSF,1.0,74,0,Female,Cutpoint #1,37.9,357.8,0.11,1111.3,9776.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0521,151224,2A,A2,HC,Healthy Control CSF,1.0,73,0,Female,Cutpoint #1,28.4,216.8,0.12,920.3,7496.9,HC,HC,HC,HC,Added meta,most likely no additional sample
+TPAD0522,151226,1A,B3,HC,Healthy Control CSF,1.0,79,0,Female,Cutpoint #1,58.3,379.8,0.08,828.3,10888.9,none,none,none,none,Added meta,most likely no additional sample
+TPAD0523,151257,4,A1,MCI,AD/MCI CSF,2.0,72,1,Male,Cutpoint #1,34.9,259.8,0.13,1286.3,10282.9,none,none,none,none,Added meta,most likely no additional sample
+TPAD0524,151280,3B,H3,HC,Healthy Control CSF,1.0,79,0,Female,Cutpoint #1,49.5,364.8,0.11,1346.3,12418.9,none,none,none,none,Added meta,additional sample most likely available
+TPAD0526,151312,3A,D6,HC,Healthy Control CSF,1.0,72,1,Male,Cutpoint #1,23.6,117.3,0.11,815.3,7661,none,none,none,none,none,additional sample most likely available
+TPAD0527,151322,4,D8,HC,Healthy Control CSF,1.0,71,1,Male,Cutpoint #1,29.6,340.8,0.13,807.3,6092.9,HC,HC,HC,HC,Added meta,most likely no additional sample
+TPAD0529,151363,2A,D10,MCI,AD/MCI CSF,2.0,80,0,Female,Cutpoint #1,62.2,408.8,0.08,787.3,9665.9,none,none,none,none,Added meta,most likely no additional sample
