@@ -13,6 +13,7 @@ import scipy.stats
 import sklearn.linear_model
 import sklearn.neighbors
 from sklearn.naive_bayes import GaussianNB
+from xgboost import XGBClassifier
 
 import sklearn.ensemble
 import time
@@ -70,6 +71,8 @@ def apply_ml_model(dev, classifier):
             model = sklearn.naive_bayes.GaussianNB()
         elif classifier == "decision_tree": 
             model = sklearn.tree.DecisionTreeClassifier()
+        elif classifier == "xgboost":
+            model = XGBClassifier()
         else: 
             print("wrong classifier named entered")
             
