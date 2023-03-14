@@ -46,6 +46,8 @@ def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy',target='gro
         model = sklearn.naive_bayes.GaussianNB()
     elif classifier == "decision_tree": 
         model = sklearn.tree.DecisionTreeClassifier()
+    elif classifier == "xgboost": 
+        model = XGBClassifier()
     else: 
         print("wrong classifier named entered")
     #define cv quantity:
