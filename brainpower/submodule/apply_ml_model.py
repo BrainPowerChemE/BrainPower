@@ -9,6 +9,8 @@ import statsmodels
 from statsmodels.sandbox.stats.multicomp import multipletests
 from matplotlib import pyplot
 
+from sklearn.model_selection import cross_val_score
+
 import scipy.stats
 import sklearn.linear_model
 import sklearn.neighbors
@@ -17,6 +19,25 @@ from xgboost import XGBClassifier
 
 import sklearn.ensemble
 import time
+
+list_features = ['AK1C1',
+ 'TAU',
+ '1433G',
+ 'SCUB1',
+ 'FMOD',
+ 'AMYP',
+ 'CRIS3',
+ 'MYDGF',
+ 'RARR2',
+ 'ATS8',
+ 'PGK1',
+ '1433Z',
+ 'SV2A',
+ 'TRH',
+ 'GUAD',
+ 'HV69D',
+ 'CO7',
+ 'SERC']
 
 def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy',target='group', cv=10, feature_list=list_features):
     """
@@ -59,7 +80,7 @@ def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy',target='gro
         raise TypeError('Enter an integer or "max" as a string')
         
     scores = cross_val_score(model, X, y, scoring=scoring_method,cv=cv)
-    mean_score = np.mean(absolute(scores))
+    mean_score = np.mean(abs(scores))
     std = np.std(scores)
     stats_list = [cv, scores, mean_score, std , model, scoring_method, feature_list[-2:]]
     stats_df = pd.DataFrame(data=[stats_list], columns=['folds','scores','abs_avg_score','std','model','scoring_method', 'features'])
