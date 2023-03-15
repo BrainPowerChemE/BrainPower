@@ -461,7 +461,7 @@ def features_ina_string(frame, uniqueness):
     return features_string
 
 
-def altair_feature_selection_chart(frame, uniqueness):
+def altair_feature_selection_chart(frame, uniqueness, charttitle='plot'):
     """
     Assumes independent scores list is in ind_scores
     Assumes feature number is in feature_num
@@ -470,7 +470,7 @@ def altair_feature_selection_chart(frame, uniqueness):
     df = frame
 
     # features_ina_string assumes features are in 'features' column
-    df["uniqueX_features_ina_string"] = features_ina_string(df, uniqueness=uniqueness)
+    df["uniqueX_features_ina_string"] = features_ina_string(df,uniqueness=uniqueness)
     # def feature_selection_vis(frame,quantitative,ordinal)
     selection = alt.selection_single(empty="none")
 
@@ -511,7 +511,7 @@ def altair_feature_selection_chart(frame, uniqueness):
 
     chart = (
         (error_bars + points + text)
-        .properties(title="plot", height=600, width=1000)
+        .properties(title=charttitle, height=600, width=1000)
         .interactive()
     )
 
