@@ -80,7 +80,7 @@ def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy',target='gro
         raise TypeError('Enter an integer or "max" as a string')
         
     scores = cross_val_score(model, X, y, scoring=scoring_method,cv=cv)
-    mean_score = np.mean(abs(scores))
+    mean_score = np.mean(absolute(scores))
     std = np.std(scores)
     stats_list = [cv, scores, mean_score, std , model, scoring_method, feature_list[-2:]]
     stats_df = pd.DataFrame(data=[stats_list], columns=['folds','scores','abs_avg_score','std','model','scoring_method', 'features'])
