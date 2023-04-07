@@ -1,4 +1,4 @@
-name: base
+name: BrainPower
 channels:
   - conda-forge
   - defaults
@@ -223,4 +223,3 @@ dependencies:
   - pip:
       - pyqt5-sip==12.11.0
       - rdkit==2022.9.4
-prefix: /Users/iriskern/miniconda3
