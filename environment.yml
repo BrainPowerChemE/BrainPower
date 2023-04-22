@@ -55,7 +55,6 @@ dependencies:
   - plotly=5.13.0
   - pluggy=1.0.0
   - ply=3.11
-  - prometheus_client=0.14.1
   - prompt-toolkit=3.0.36
   - ptyprocess=0.7.0
   - py-xgboost=1.7.3
@@ -75,7 +74,6 @@ dependencies:
   - python_abi=3.10
   - pytz=2022.7.1
   - pyzmq=23.2.0
-  - qtpy=2.2.0
   - qtwebkit=5.212
   - scikit-learn=1.2.0
   - scipy=1.7.3
@@ -91,7 +89,6 @@ dependencies:
   - xgboost=1.7.3
   - xz=5.2.8
   - zeromq=4.3.4
-  - zipp=3.14.0
   - pip:
       - category-encoders==2.6.0
       - mrmr-selection==0.2.6
