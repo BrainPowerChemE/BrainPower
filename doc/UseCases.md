@@ -6,15 +6,16 @@
 	+ Output: single formatted DataFrame with metadata
 
 + split_cats_by_tolerance.py
- 	+ Function: split the input into two DataFrame,"df_dev" and "df_test", such that the percentage of each category is within a specified tolerance	+ Input: single formatted DataFrame with metadata
-	+ Output: two formatted DataFrame called "data_dev" and "data_test"
+ 	+ Function: split the input into development set and testing set, such that the percentage of each category is within a specified tolerance	
+ 	+ Input: single formatted DataFrame with metadata
+	+ Output: formatted development DataFrame and testing DataFrame
+
++ over_under.py
+	+ Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset 
+	+ Input: formatted development DataFrame
+	+ Output: balanced dataset as a dataframe
 
 + x.py
-	+ Function: Create anonymized label for data, separate metadata from data, append both to the respective tables in the database
-	+ Input: Formatted DF with metadata
-	+ Output: Labeled data to extended anonymous database, associated metadata to extended patient database
-
-+ find_biomarkers.py
 	+ Function: Assesses which proteins are good predictors of Alzeihmer’s or Parkinson’s 
 	+ Input: Proteomics dataset 
 	+ Output: Pandas dataset of potential biomarkers and their p-values
