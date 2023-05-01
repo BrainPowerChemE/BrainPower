@@ -15,10 +15,10 @@
 	+ Input: formatted development DataFrame
 	+ Output: balanced dataset as a dataframe
 
-+ x.py
++ make_confusion_mtrx.py
 	+ Function: Assesses which proteins are good predictors of Alzeihmer’s or Parkinson’s 
 	+ Input: Proteomics dataset 
-	+ Output: Pandas dataset of potential biomarkers and their p-values
+	+ Output: Pands
 
 + cluster_protein.py
 	+ Function: Sort out the biomarkers
