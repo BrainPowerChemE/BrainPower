@@ -20,17 +20,17 @@
 	+ Input: Proteomics dataset 
 	+ Output: Pands
 
-+ cluster_protein.py
++ select_features.py
 	+ Function: Sort out the biomarkers
 	+ Input: csv of protein list
 	+ Output: Visualize Plots
 
-+ compare_patient_groups.py
++ x.py
 	+ Function: It is an interactive visualization that takes the results from the machine learning algorithm and displays potential biomarkers
 	+ Input: ML algorithm results
 	+ Output: Volcano plot of various proteins to assess potential biomarkers for Alzeihmer’s or Parkinson’s as a PNG
 
-+ interaction_biomarkers.py
++ x.py
 	+ Function: Sort out the properties of biomarkers
 	+ Input: Pandas dataset of potential biomarkers and their p-values
 	+ Output: Cluster Pandas dataset of identified biomarkers & visualization plots
