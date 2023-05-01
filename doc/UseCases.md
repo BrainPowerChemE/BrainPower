@@ -1,16 +1,15 @@
 **Components:**
 
-+ add_data.py
-	+ Function: Upload new MSMS data to the database
-	+ Input: Patient’s ID number, date of test, raw data csv file, additional notes
-	+ Output: Formatted DF with metadata
++ handle_scale_and_nan.py
+	+ Function: scale of numeric features and handle of missing values in the input
+	+ Input: raw data csv file with Patient’s ID number and biomakers
+	+ Output: single formatted DataFrame with metadata
 
-+ clean_data.py
- 	+ Function: Correct data type, remove white space, remove punctuation, format data in dataframe, append metadata
-	+ Input: Raw data in csv format and metadata in dataframe format, GUI to edit
-	+ Output: Formatted DF with metadata
++ split_cats_by_tolerance.py
+ 	+ Function: split the input into two DataFrame,"df_dev" and "df_test", such that the percentage of each category is within a specified tolerance	+ Input: single formatted DataFrame with metadata
+	+ Output: two formatted DataFrame called "data_dev" and "data_test"
 
-+ append_trainingdata.py
++ x.py
 	+ Function: Create anonymized label for data, separate metadata from data, append both to the respective tables in the database
 	+ Input: Formatted DF with metadata
 	+ Output: Labeled data to extended anonymous database, associated metadata to extended patient database
