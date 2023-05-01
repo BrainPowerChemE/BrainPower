@@ -8,19 +8,19 @@
 + split_cats_by_tolerance.py
  	+ Function: split the input into development set and testing set, such that the percentage of each category is within a specified tolerance	
  	+ Input: single formatted DataFrame with metadata
-	+ Output: formatted development DataFrame and testing DataFrame
+	+ Output: formatted development DataFrame (data_dev) and testing DataFrame (data_test)
 
 + over_under.py
 	+ Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset 
-	+ Input: formatted development DataFrame
-	+ Output: balanced dataset as a dataframe
-
-+ make_confusion_mtrx.py
-	+ Function: Assesses which proteins are good predictors of Alzeihmer’s or Parkinson’s 
-	+ Input: Proteomics dataset 
-	+ Output: Pands
+	+ Input: formatted development DataFrame (data_dev)
+	+ Output: balanced dvelopment Dataframe (data_dev)
 
 + select_features.py
+	+ Function: selecte the top N features using the mRMR (minimum redundancy maximum relevance) algorithm
+	+ Input: balanced dvelopment Dataframe (data_dev) 
+	+ Output: a JSON file with selected features
+
++ make_confusion_mtrx.py
 	+ Function: Sort out the biomarkers
 	+ Input: csv of protein list
 	+ Output: Visualize Plots
