@@ -3,7 +3,7 @@
 + handle_scale_and_nan.py
 	+ Function: scale of numeric features and handle of missing values in the input
 	+ Input: raw data csv file with Patient’s ID number and biomakers
-	+ Output: single formatted DataFrame with metadata
+	+ Output: single formatted DataFrame
 
 + split_cats_by_tolerance.py
  	+ Function: split the input into development set and testing set, such that the percentage of each category is within a specified tolerance	
@@ -26,9 +26,9 @@
 	+ Output: confusion matrix visualization with balanced accuracy score
 
 + roc_curves_one_vs_rest.py
-	+ Function: It is an interac
-	+ Input: ML algorithm results
-	+ Output: Volcano plot of various proteins to assess potential biomarkers for Alzeihmer’s or Parkinson’s as a PNG
+	+ Function: generates and plots Receiver Operating Characteristic (ROC) curves for a one-vs-rest multiclass classification
+	+ Input: formatted development DataFrame(data_dev) and testing DataFrame (data_test)
+	+ Output: plot of ROC curves with calculated AUC (Area Under the Curve) as a PNG file
 
 + x.py
 	+ Function: So
