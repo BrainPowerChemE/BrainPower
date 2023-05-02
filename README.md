@@ -5,11 +5,11 @@ Alzheimer’s (AD) and Parkinson’s (PD) are the most prevalent neurodegenerati
 
 ![flow_chart](https://user-images.githubusercontent.com/121824613/225520420-786cbf18-c7de-492f-9a71-227d2e60746d.png)
 
-# Importing drug data from STITCH
+# Importing proteomics data
 
 ## Table of Contents
 
-- [Importing data from STITCH](#importing-data-from-stitch)
+- [Importing data](#importing-data-from-stitch)
   - [About the Dataset](#about-the-dataset)
     - [Download Data](#download-data)
     - [Overview](#overview)
