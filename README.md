@@ -1,10 +1,7 @@
 # BrainPower
 
-# Importing proteomics data
-
 ## Table of Contents
 
-- [Importing data](#importing-data-from-stitch)
   - [About the Dataset](#about-the-dataset)
     - [Overview](#overview)
     - [Artifacts](#artifacts)
