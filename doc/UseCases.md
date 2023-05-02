@@ -26,7 +26,7 @@
 	+ Output: confusion matrix visualization with balanced accuracy score
 
 + roc_curves_one_vs_rest.py
-	+ Function: It is an interactive visualization that takes the results from the machine learning algorithm and displays potential biomarkers
+	+ Function: It is an interac
 	+ Input: ML algorithm results
 	+ Output: Volcano plot of various proteins to assess potential biomarkers for Alzeihmer’s or Parkinson’s as a PNG
 
