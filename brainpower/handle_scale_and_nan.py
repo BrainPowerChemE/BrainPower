@@ -1,3 +1,7 @@
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+import sklearn
+
 def handle_scale_and_nan(df):
     features = list(df.select_dtypes(include='float64'))
     cat = list(df.select_dtypes(include='object'))
