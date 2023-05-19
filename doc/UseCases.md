@@ -5,11 +5,6 @@
 	+ Input: raw research_data.csv file with Patient’s ID number and biomakers
 	+ Output: single formatted DataFrame (scaled_data_full.df)
 
-+ split_cats_by_tolerance.py
- 	+ Function: split the input into development set and testing set, such that the percentage of each category is within a specified tolerance	
- 	+ Input: single formatted DataFrame (scaled_data_full.df)
-	+ Output: formatted imbalanced development DataFrame (data_dev.df) and testing DataFrame (data_test.df)
-
 + over_under.py
 	+ Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset 
 	+ Input: formatted development DataFrame (data_dev.df)
