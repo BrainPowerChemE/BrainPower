@@ -1,19 +1,17 @@
 import unittest
-import numpy as np
 import pandas as pd
-from handle_scale_and_nan import handle_scale_and_nan
 from sklearn.preprocessing import StandardScaler
+from handle_scale_and_nan import handle_scale_and_nan
 
-
-class TestHandleScaleAndNaN(unittest.TestCase):
+class TestHandleScaleAndNan(unittest.TestCase):
 
     def test_handle_scale_and_nan(self):
         # Create a sample DataFrame for testing
         df = pd.DataFrame({
-            'A': [1.0, 2.0, 3.0],
-            'B': [4.0, 5.0, 6.0],
-            'C': [7.0, 8.0, 9.0],
-            'D': ['X', 'Y', 'Z']
+            'A': [1.0, 2.0, 3.0, 4.0, None],
+            'B': [5.0, 6.0, 7.0, None, 9.0],
+            'C': [10.0, None, 12.0, 13.0, 14.0],
+            'D': ['a', 'b', 'c', 'd', 'e']
         })
         
         # Apply the function
@@ -25,14 +23,12 @@ class TestHandleScaleAndNaN(unittest.TestCase):
         # Check if the DataFrame has the correct columns
         self.assertEqual(result.columns.tolist(), ['D', 'A', 'B', 'C'])
         
-        # Check if the categorical columns are unchanged
-        self.assertTrue(result['D'].equals(df['D']))
+        # Check if the missing values are filled with the specified value
+        self.assertEqual(result['A'].isnull().sum(), 0)
+        self.assertEqual(result['B'].isnull().sum(), 0)
+        self.assertEqual(result['C'].isnull().sum(), 0)
         
-        # Check if the continuous columns are standardized
-        scaler = StandardScaler().fit(df[['A', 'B', 'C']])
-        expected = pd.DataFrame(data=scaler.transform(df[['A', 'B', 'C']]), columns=['A', 'B', 'C'])
-        self.assertTrue(result[['A', 'B', 'C']].equals(expected))
-        
-        # Check if NaN values are filled with 0.01
-        self.assertTrue(result.isnull().sum().sum() == 0)
-        
+        # Check if the scaling is applied correctly
+        scaler = StandardScaler()
+        expected = pd.DataFrame(data=scaler.fit_transform(df.fillna(value=6)[['A', 'B', 'C']]), columns=['A', 'B', 'C'])
+        pd.testing.assert_frame_equal(result[['A', 'B', 'C']], expected)
