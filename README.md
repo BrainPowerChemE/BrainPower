@@ -49,7 +49,9 @@ This directory stores the scripts used to download, train, and test the dataset 
 1. To test [`automation.py`](automation.py), run:
 
 ```
-python test_automation.py
+/BrainPower/
+python -m unittest
+
 ```
 
 ### Import
