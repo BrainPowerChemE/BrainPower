@@ -51,7 +51,6 @@ This directory stores the scripts used to download, train, and test the dataset 
 ```
 /BrainPower/
 python -m unittest
-
 ```
 
 ### Import
