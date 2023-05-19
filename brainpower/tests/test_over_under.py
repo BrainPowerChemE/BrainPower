@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 import numpy as np
-from over_under import over_under
+from brainpower import over_under
 from sklearn.utils import check_random_state
 
 class TestOverUnder(unittest.TestCase):
