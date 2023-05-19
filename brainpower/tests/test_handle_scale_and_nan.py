@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from handle_scale_and_nan import handle_scale_and_nan
+from brainpower import handle_scale_and_nan
 
 class TestHandleScaleAndNan(unittest.TestCase):
 
