@@ -27,32 +27,24 @@ import sys
 from apply_ml_model import apply_ml_model
 from bp_preprocessing import handle_scale_and_nan, over_under
 
-list_features = ['AK1C1','TAU', '1433G', 'SCUB1', 'FMOD', 'AMYP', 'CRIS3', 
-                'MYDGF', 'RARR2', 'ATS8', 'PGK1', '1433Z', 'SV2A', 'TRH', 'GUAD', 
-                'HV69D', 'CO7', 'SERC']
+selected_features = ['NEUG', 'PPIA', 'SEM3G', 'EMIL3', 'AK1C1', 'LY86', '1433G', 'GLT18', 'KCC2D', 'SPRN', 'PGM1', 'ITM2B', 'TAU', 'AMPN', 'AB42/AB40', '1433Z', 'S38AA', 'DSG2']
 
 classes_of_interest=['Healthy', 'PD_MCI_LBD', 'PD', 'AD_MCI']
 
-
-def pre_process_data(data_dev, data_test): 
-    data_dev = handle_scale_and_nan(data_dev)
-    data_test = handle_scale_and_nan(data_test)
-    data_dev = data_dev.drop(columns='assay_ID')
-    data_test = data_test.drop(columns='assay_ID')
-    data_dev = over_under(data_dev) #split groups equally 
-    return data_dev, data_test
-
-
-def roc_curves_one_vs_rest(data_dev, data_test):
-    data_dev, data_test = pre_process_data(data_dev, data_test)
+def roc_curves_one_vs_rest(data_dev, data_test, feature_list=None):
+    if feature_list is None:
+        feature_list = selected_features
+        
+    classes_of_interest=['Healthy', 'PD_MCI_LBD', 'PD', 'AD_MCI']
     
-    dev = data_dev[list_features]
+    dev = data_dev[feature_list]
     dev.insert(0, "group", data_dev['group'], True)
     
-    X_test = data_test[list_features]
+    
+    X_test = data_test[feature_list]
     y_test = data_test['group']
 
-    X_train = dev.iloc[:,1:] 
+    X_train = dev.iloc[:,1:]
     y_train = dev.iloc[:,0] # 0th column is our target
 
 
@@ -94,7 +86,7 @@ def roc_curves_one_vs_rest(data_dev, data_test):
     plt.axis("square")
     plt.xlabel("False Positive Rate")
     plt.ylabel("True Positive Rate")
-    plt.title(f"One-vs-Rest ROC curves, using {len(list_features)} features")
+    plt.title(f"One-vs-Rest ROC curves, using {len(feature_list)} features")
     plt.legend()
     plt.savefig('roc_curves.png')
     plt.show()
