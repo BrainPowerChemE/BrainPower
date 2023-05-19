@@ -9,6 +9,6 @@ def handle_scale_and_nan(df):
     df_cont = pd.DataFrame(data=scaler.transform(df[features]), columns=features)
     df_cat = pd.DataFrame(data=df[cat], columns=cat)
     df = pd.concat([df_cat,df_cont],axis=1)
-    df = df.fillna(value=0.01)
+    df = df.fillna(value=10)
     
     return df
