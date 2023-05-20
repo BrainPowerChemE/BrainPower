@@ -24,28 +24,24 @@ from xgboost import XGBClassifier
 
 import sys
 
-from apply_ml_model import apply_ml_model
-from bp_preprocessing import handle_scale_and_nan, over_under
+from make_confusion_matrix import make_confusion_mtrx
+from select_features import select_features
+from false_positives import find_false_positive_patients
 
-selected_features = ['NEUG', 'PPIA', 'SEM3G', 'EMIL3', 'AK1C1', 'LY86', '1433G', 'GLT18', 'KCC2D', 'SPRN', 'PGM1', 'ITM2B', 'TAU', 'AMPN', 'AB42/AB40', '1433Z', 'S38AA', 'DSG2']
-
-classes_of_interest=['Healthy', 'PD_MCI_LBD', 'PD', 'AD_MCI']
-
-def roc_curves_one_vs_rest(data_dev, data_test, feature_list=None):
+def roc_curves_one_vs_rest(data_dev, data_test, metadata, ml_results, feature_list=None):
+    """
+    outputs a dataframe of false positive cases and one-vs-rest ROC curves 
+    """
     if feature_list is None:
         feature_list = selected_features
         
     classes_of_interest=['Healthy', 'PD_MCI_LBD', 'PD', 'AD_MCI']
     
-    dev = data_dev[feature_list]
-    dev.insert(0, "group", data_dev['group'], True)
-    
-    
     X_test = data_test[feature_list]
     y_test = data_test['group']
 
-    X_train = dev.iloc[:,1:]
-    y_train = dev.iloc[:,0] # 0th column is our target
+    X_train = dev[feature_list]
+    y_train = dev['group'] 
 
 
     classifier = sklearn.ensemble.RandomForestClassifier()
@@ -90,13 +86,19 @@ def roc_curves_one_vs_rest(data_dev, data_test, feature_list=None):
     plt.legend()
     plt.savefig('roc_curves.png')
     plt.show()
+    return find_false_positive_patients(metadata, ml_results)
     
 def main(): 
     PATH_DEV_DATA = sys.argv[1]
     PATH_TEST_DATA = sys.argv[2]
+    PATH_METADATA = sys.argv[3]
     data_dev = pd.read_csv(PATH_DEV_DATA)
     data_test = pd.read_csv(PATH_TEST_DATA)
-    roc_curves_one_vs_rest(data_dev, data_test)
+    metadata = pd.read_csv(PATH_METADATA)
+    feature_list = select_features(data_dev, 18)
+    results = make_confusion_mtrx(data_dev, data_test, feature_list)
+    false_pos_df=roc_curves_one_vs_rest(data_dev=data_dev, data_test=data_test, 
+        metadata=metadata, ml_results=results, feature_list=feature_list)
 
 if __name__ == '__main__':
 	main()

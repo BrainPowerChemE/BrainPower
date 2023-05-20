@@ -1,5 +1,5 @@
 def select_features(data_dev, n):
-    X_dev = data_dev.iloc[:, 1:-1]
+    X_dev = data_dev.iloc[:, 2:-1]
     y_dev = data_dev.iloc[:, 0]
     
     from sklearn.datasets import make_classification

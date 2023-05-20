@@ -24,14 +24,14 @@ from xgboost import XGBClassifier
 
 import sys
 
-from apply_ml_model import apply_ml_model
-from bp_preprocessing import handle_scale_and_nan, over_under
-
-selected_features = ['NEUG', 'PPIA', 'SEM3G', 'EMIL3', 'AK1C1', 'LY86', '1433G', 'GLT18', 'KCC2D', 'SPRN', 'PGM1', 'ITM2B', 'TAU', 'AMPN', 'AB42/AB40', '1433Z', 'S38AA', 'DSG2']
-
-classes_of_interest=['Healthy', 'PD_MCI_LBD', 'PD', 'AD_MCI']
+from select_features import select_features
 
 def make_confusion_mtrx(dev, df_test, feature_list=None):
+    
+    """
+    Outputs a confusion matrix and dataframe of results including the predicted and actual label of the patient's condition
+    """
+    
     if feature_list is None:
         feature_list = selected_features
         
@@ -39,20 +39,21 @@ def make_confusion_mtrx(dev, df_test, feature_list=None):
     test_y = df_test['group']
 
     dev_X = dev[feature_list]
-    dev_y = dev.iloc[:,0] # 0th column is our target
+    dev_y = dev['group'] # 0th column is our target
 
     model = sklearn.ensemble.RandomForestClassifier()
-    model.fit(dev_X, dev_y)
+    model.fit(dev_X, dev_y) 
     print('score=', sklearn.metrics.balanced_accuracy_score(test_y, model.predict(test_X)))
     ConfusionMatrixDisplay.from_estimator(model, test_X, test_y)
     plt.show()
-
+    return pd.DataFrame({"Predicted" : model.predict(test_X), 'Actual': test_y, 'patient_ID': df_test['assay_ID']})                        
 def main():
     PATH_DEV_DATA = sys.argv[1]
     PATH_TEST_DATA = sys.argv[2]
     data_dev = pd.read_csv(PATH_DEV_DATA)
     data_test = pd.read_csv(PATH_TEST_DATA)
-    make_confusion_mtrx(data_dev, data_test, features=list_features)
+    feature_list = select_features(data_dev, 18)
+    make_confusion_mtrx(data_dev, data_test, feature_list=feature_list)
 
 if __name__ == '__main__':
     main()
