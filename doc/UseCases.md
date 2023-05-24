@@ -20,6 +20,12 @@
 	+ Input: balanced dvelopment Dataframe (data_dev.df), testing DataFrame (data_test.df) and selected features list (selected_features.json)
 	+ Output: Dataframe (stats.df) store the evaluation results including the number of folds, scores, average score, standard deviation, model used and method
 
++ false_positives.py 
+	+ Function: identifies the "healthy" patients that were identified as diseased by the ML model
+	+ Input: dataframe with one column has the predicted condition and the second has the actual condition of the patient. 
+	 	Can use the ml_results dataframe outputted from the make_confusion_mtrx() function 
+	+ Output: a pandas DataFrame of the "healthy" patients that were identified as diseased by the ML model
+    
 + make_confusion_mtrx.py
 	+ Function: generate a confusion matrix for a random forest classifier
 	+ Input: formatted balanced development DataFrame(data_dev.df) and testing DataFrame (data_test.df)
