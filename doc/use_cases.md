@@ -23,7 +23,7 @@
 + false_positives.py 
 	+ Function: identifies the "healthy" patients that were identified as diseased by the ML model
 	+ Input: dataframe with one column has the predicted condition and the second has the actual condition of the patient. 
-	 	Can use the ml_results dataframe outputted from the make_confusion_mtrx() function 
+	 	Can use the ml_results dataframe outputted from the make_confusion_mtrx() function. Also needs the metadata-- contains patient information. 
 	+ Output: a pandas DataFrame of the "healthy" patients that were identified as diseased by the ML model
     
 + make_confusion_mtrx.py
