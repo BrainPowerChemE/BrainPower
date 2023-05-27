@@ -1,3 +1,11 @@
+    """
+    Function: 
+    
+    Input: 
+    
+    Output: 
+    """
+
 def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy', cv=10, feature_list=None):
     """
     Finds the score for different ML classifiers
