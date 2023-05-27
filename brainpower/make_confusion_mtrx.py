@@ -26,11 +26,15 @@ import sys
 
 from brainpower import select_features
 
-def make_confusion_mtrx(dev, df_test, feature_list=None):
+    """
+    Function: 
     
+    Input: 
+    
+    Output: 
     """
-    Outputs a confusion matrix and dataframe of results including the predicted and actual label of the patient's condition
-    """
+
+def make_confusion_mtrx(dev, df_test, feature_list=None):    
     
     if feature_list is None:
         feature_list = selected_features
