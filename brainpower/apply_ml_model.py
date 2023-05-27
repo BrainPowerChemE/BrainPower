@@ -1,9 +1,9 @@
     """
-    Function: 
+    Function: evaluate the performance of various machine learning classifiers with cross-validation
     
-    Input: 
+    Input: balanced dvelopment Dataframe (data_dev.df), testing DataFrame (data_test.df) and selected features list (selected_features.json)
     
-    Output: 
+    Output: Dataframe (stats.df) store the evaluation results including the number of folds, scores, average score, standard deviation, model used and method
     """
 
 def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy', cv=10, feature_list=None):
