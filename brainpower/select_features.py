@@ -1,9 +1,9 @@
     """
-    Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset
+    Function: selecte the top N features using the mRMR (minimum redundancy maximum relevance) algorithm
     
-    Input: formatted development DataFrame (data_dev.df)
+    Input: balanced dvelopment Dataframe (data_dev.df)
     
-    Output: balanced dvelopment Dataframe (data_dev.df)
+    Output: a JSON file with selected N features (selected_features.json)
     """
 
 def select_features(data_dev, n):
