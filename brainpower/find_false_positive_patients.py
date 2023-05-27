@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-def find_false_positive_patients(metadata, ml_results): 
     """
     Function: identifies the "healthy" patients that were identified as diseased by the ML model
     
@@ -9,6 +8,8 @@ def find_false_positive_patients(metadata, ml_results):
     
     Output: DataFrame (false_positives_info.df) of the "healthy" patients that were identified as diseased by the ML model
     """
+
+def find_false_positive_patients(metadata, ml_results): 
     
     false_positives=ml_results.iloc[np.where((ml_results['Actual'] == 'Healthy') & ~(ml_results['Predicted'] == 'Healthy'))]
 
