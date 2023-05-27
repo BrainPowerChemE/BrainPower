@@ -1,3 +1,11 @@
+    """
+    Function: 
+    
+    Input: 
+    
+    Output: 
+    """
+
 def select_features(data_dev, n):
     X_dev = data_dev.iloc[:, 2:-1]
     y_dev = data_dev.iloc[:, 0]
