@@ -16,11 +16,11 @@ import mrmr
 from sklearn.model_selection import cross_val_score
 
     """
-    Function: 
+    Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset
     
-    Input: 
+    Input: formatted development DataFrame (data_dev.df)
     
-    Output: 
+    Output: balanced dvelopment Dataframe (data_dev.df)
     """
 
 def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.random.randint(0,4294967295)):
