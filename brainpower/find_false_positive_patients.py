@@ -3,13 +3,11 @@ import numpy as np
 
 def find_false_positive_patients(metadata, ml_results): 
     """
-    Outputs a pandas DataFrame of the "healthy" patients that were identified as diseased by the ML model
+    Function: identifies the "healthy" patients that were identified as diseased by the ML model
     
-    Input:
-    - ml_results: Output from the make_confusion_mtrx() function to use as input
+    Input: dataframe (ml_results.df) with predicted condition vs. actual condition and Metadata.csv contains patient information
     
-    Output:
-    - pandas DataFrame
+    Output: DataFrame (false_positives_info.df) of the "healthy" patients that were identified as diseased by the ML model
     """
     
     false_positives=ml_results.iloc[np.where((ml_results['Actual'] == 'Healthy') & ~(ml_results['Predicted'] == 'Healthy'))]
