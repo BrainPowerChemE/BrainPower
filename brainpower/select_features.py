@@ -1,9 +1,9 @@
     """
-    Function: 
+    Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset
     
-    Input: 
+    Input: formatted development DataFrame (data_dev.df)
     
-    Output: 
+    Output: balanced dvelopment Dataframe (data_dev.df)
     """
 
 def select_features(data_dev, n):
