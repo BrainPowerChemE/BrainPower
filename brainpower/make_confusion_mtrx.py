@@ -27,11 +27,11 @@ import sys
 from brainpower import select_features
 
     """
-    Function: 
+    Function: generate a confusion matrix for a random forest classifier
     
-    Input: 
+    Input: formatted balanced development DataFrame(data_dev.df) and testing DataFrame (data_test.df)
     
-    Output: 
+    Output: confusion matrix visualization with balanced accuracy score and dataframe (ml_results.df) with predicted condition vs. actual condition
     """
 
 def make_confusion_mtrx(dev, df_test, feature_list=None):    
