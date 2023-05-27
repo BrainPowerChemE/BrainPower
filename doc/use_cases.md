@@ -25,7 +25,7 @@
 	+ Input: formatted balanced development DataFrame(data_dev.df) and testing DataFrame (data_test.df)
 	+ Output: confusion matrix visualization with balanced accuracy score and dataframe (ml_results.df) with predicted condition vs. actual condition
 
-+ false_positives.py 
++ find_false_positive_patients.py 
 	+ Function: identifies the "healthy" patients that were identified as diseased by the ML model
 	+ Input: dataframe (ml_results.df) with predicted condition vs. actual condition and Metadata.csv contains patient information 
 	+ Output: DataFrame (false_positives_info.df) of the "healthy" patients that were identified as diseased by the ML model
