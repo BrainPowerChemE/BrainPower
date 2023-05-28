@@ -19,7 +19,7 @@ Alzheimer’s (AD) and Parkinson’s (PD) are the most prevalent neurodegenerati
 
 This directory stores the scripts used to download, train, and test the dataset with machine learning models. 
 
-![flow_chart (1)](https://github.com/BrainPowerChemE/BrainPower/assets/121738843/d4390625-87b5-4112-8b6c-5ccc9e0a6df9)
+![flow_chart](https://github.com/BrainPowerChemE/BrainPower/assets/121738843/db6cd4cd-9438-4ffc-b0ee-268ef90adc1b)
 
 ### Artifacts
 
