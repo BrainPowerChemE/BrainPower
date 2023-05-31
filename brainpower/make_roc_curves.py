@@ -28,6 +28,10 @@ from make_confusion_matrix import make_confusion_mtrx
 from select_features import select_features
 from false_positives import find_false_positive_patients
 
+
+
+def roc_curves_one_vs_rest(data_dev, data_test, metadata, ml_results, feature_list=None):
+	
     """
     Function: generates and plots Receiver Operating Characteristic (ROC) curves for a one-vs-rest multiclass classification
     
@@ -35,9 +39,6 @@ from false_positives import find_false_positive_patients
     
     Output: plot of ROC curves with calculated AUC (Area Under the Curve) as a PNG file
     """
-
-def roc_curves_one_vs_rest(data_dev, data_test, metadata, ml_results, feature_list=None):
-
     if feature_list is None:
         feature_list = selected_features
         
