@@ -26,6 +26,10 @@ import sys
 
 from brainpower import select_features
 
+
+
+def make_confusion_mtrx(dev, df_test, feature_list=None):    
+    
     """
     Function: generate a confusion matrix for a random forest classifier
     
@@ -33,8 +37,6 @@ from brainpower import select_features
     
     Output: confusion matrix visualization with balanced accuracy score and dataframe (ml_results.df) with predicted condition vs. actual condition
     """
-
-def make_confusion_mtrx(dev, df_test, feature_list=None):    
     
     if feature_list is None:
         feature_list = selected_features
