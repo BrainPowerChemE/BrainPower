@@ -30,7 +30,7 @@ from brainpower import find_false_positive_patients
 
 
 
-def roc_curves_one_vs_rest(data_dev, data_test, metadata, ml_results, feature_list=None):
+def make_roc_curves(data_dev, data_test, metadata, ml_results, feature_list=None):
 	
     """
     Function: generates and plots Receiver Operating Characteristic (ROC) curves for a one-vs-rest multiclass classification
