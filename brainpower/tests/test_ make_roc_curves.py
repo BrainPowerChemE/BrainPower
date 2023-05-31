@@ -8,6 +8,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 from brainpower import make_confusion_mtrx
 from brainpower import make_roc_curves
+from brainpower import find_false_positive_patients
 
 class TestMakeRocCurve(unittest.TestCase):
 
@@ -44,7 +45,7 @@ class TestMakeRocCurve(unittest.TestCase):
     
     
         # Check if the result is a DataFrame
-        self.assertIsInstance(result, pd.DataFrame)
+        self.assertIsInstance(false_pos_df, pd.DataFrame)
         
         # Check if the DataFrame has the correct columns
         self.assertEqual(result.columns.tolist(), ['Predicted', 'Actual', 'patient_ID'])
