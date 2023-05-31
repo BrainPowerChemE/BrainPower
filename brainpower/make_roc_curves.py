@@ -28,8 +28,6 @@ from brainpower import make_confusion_mtrx
 from brainpower import select_features
 from brainpower import find_false_positive_patients
 
-
-
 def make_roc_curves(data_dev, data_test, metadata, ml_results, feature_list=None):
 	
     """
