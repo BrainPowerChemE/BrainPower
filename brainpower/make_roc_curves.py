@@ -89,7 +89,7 @@ def make_roc_curves(data_dev, data_test, metadata, ml_results, feature_list=None
     plt.ylabel("True Positive Rate")
     plt.title(f"One-vs-Rest ROC curves, using {len(feature_list)} features")
     plt.legend()
-    plt.savefig('roc_curves.png')
+    # plt.savefig('roc_curves.png')
     plt.show()
     return find_false_positive_patients(metadata, ml_results)
     
