@@ -30,8 +30,11 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 
 #### Test Scripts
-[`test_automation.py`](test_automation.py) tests automation.py
-
+[`test_find_false_positive_patients.py`](test_find_false_positive_patients.py) tests find_false_positive_patients.py
+[`test_make_roc_curves.py`](test_make_roc_curves.py) tests make_roc_curves.py
+[`test_handle_scale_and_nan.py`](test_handle_scale_and_nan.py) tests handle_scale_and_nan.py
+[`test_make_confusion_mtrx.py`](test_make_confusion_mtrx.py) tests make_confusion_mtrx.py
+[`test_over_under.py`](test_over_under.py) tests over_under.py
 
 ### Files
 
