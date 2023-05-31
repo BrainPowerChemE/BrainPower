@@ -52,7 +52,8 @@ def make_confusion_mtrx(dev, df_test, feature_list=None):
     print('score=', sklearn.metrics.balanced_accuracy_score(test_y, model.predict(test_X)))
     ConfusionMatrixDisplay.from_estimator(model, test_X, test_y)
     plt.show()
-    return pd.DataFrame({"Predicted" : model.predict(test_X), 'Actual': test_y, 'patient_ID': df_test['assay_ID']})                        
+    return pd.DataFrame({"Predicted" : model.predict(test_X), 'Actual': test_y, 'patient_ID': df_test['assay_ID']})      
+
 def main():
     PATH_DEV_DATA = sys.argv[1]
     PATH_TEST_DATA = sys.argv[2]
