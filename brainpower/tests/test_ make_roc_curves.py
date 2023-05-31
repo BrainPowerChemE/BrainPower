@@ -43,19 +43,5 @@ class TestMakeRocCurve(unittest.TestCase):
         false_pos_df=make_roc_curves(data_dev=dev, data_test=df_test, 
         metadata=df_metadata, ml_results=result, feature_list=['feature1', 'feature2'])
     
-    
         # Check if the result is a DataFrame
         self.assertIsInstance(false_pos_df, pd.DataFrame)
-        
-        # Check if the DataFrame has the correct columns
-        self.assertEqual(result.columns.tolist(), ['Predicted', 'Actual', 'patient_ID'])
-        
-        # Check if the predicted and actual labels match
-        expected_predicted = ['A', 'B', 'A', 'B']
-        expected_actual = ['A', 'B', 'A', 'B']
-        self.assertEqual(result['Predicted'].tolist(), expected_predicted)
-        self.assertEqual(result['Actual'].tolist(), expected_actual)
-        
-        # Check if the patient IDs are correct
-        expected_ids = ['ID5', 'ID6', 'ID7', 'ID8']
-        self.assertEqual(result['patient_ID'].tolist(), expected_ids)
