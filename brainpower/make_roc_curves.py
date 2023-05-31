@@ -24,9 +24,9 @@ from xgboost import XGBClassifier
 
 import sys
 
-from make_confusion_mtrx import make_confusion_mtrx
-from select_features import select_features
-from false_positives import find_false_positive_patients
+from brainpower import make_confusion_mtrx
+from brainpower import select_features
+from brainpower import find_false_positive_patients
 
 
 
