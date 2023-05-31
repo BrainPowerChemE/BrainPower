@@ -27,6 +27,15 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 #### Python Scripts
 [`automation.py`](automation.py) trains and tests the dataset on a machine learning model and outputs two resulting figures: ROC Curve plot and confusion matrix.
+[`test_find_false_positive_patients.py`](brainpower/find_false_positive_patients.py) tests find_false_positive_patients.py
+
+[`test_make_roc_curves.py`](brainpower/make_roc_curves.py) outputs one-vs-rest ROC Curves
+
+[`test_handle_scale_and_nan.py`](brainpower/handle_scale_and_nan.py) replaces NaNs with the lowest value in the dataframe and applies a standard scaler.
+
+[`test_make_confusion_mtrx.py`](brainpower/make_confusion_mtrx.py) outputs a confusion matrix based on the machine learning model results
+
+[`test_over_under.py`](brainpower/over_under.py) 
 
 
 #### Test Scripts
