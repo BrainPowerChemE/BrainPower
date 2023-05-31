@@ -58,16 +58,9 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 ### Run Tests
 
-1. To test [`automation.py`](automation.py), run:
+1. To test the code, run:
 
 ```
 /BrainPower/
 python -m unittest
-```
-
-### Import
-
-2. Run the script to output  ROC curve and confusion matrix figures.
-```
-python automation.py
 ```
