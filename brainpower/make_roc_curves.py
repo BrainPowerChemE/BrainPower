@@ -104,7 +104,7 @@ def main():
     metadata = pd.read_csv(PATH_METADATA)
     feature_list = select_features(data_dev, 18)
     results = make_confusion_mtrx(data_dev, data_test, feature_list)
-    false_pos_df=roc_curves_one_vs_rest(data_dev=data_dev, data_test=data_test, 
+    false_pos_df=make_roc_curves(data_dev=data_dev, data_test=data_test, 
         metadata=metadata, ml_results=results, feature_list=feature_list)
 
 if __name__ == '__main__':
