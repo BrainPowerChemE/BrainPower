@@ -15,25 +15,15 @@ import imblearn
 import mrmr
 from sklearn.model_selection import cross_val_score
 
+
+
+def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.random.randint(0,4294967295)):
     """
     Function: perform oversampling and undersampling techniques to balance the distribution of a categorical variable in a dataset
     
     Input: formatted development DataFrame (data_dev.df)
     
     Output: balanced dvelopment Dataframe (data_dev.df)
-    """
-
-def over_under(df_train,cat_in_excess='Healthy',target='group',randomstate=np.random.randint(0,4294967295)):
-    """
-    Takes dataframe(s) with only the target value and float64 features
-    This function is to balance the samples in an imbalanced training dataset that has one category in excess, with additional categories more near each other
-    The categories below the category in excess will be oversampled to equality, then the category in excess will be undersampled to equality
-    ---Parameters---
-    df_train: the training dataframe
-    cat_in_excess: the category which is present in excess, far above the other categories
-    target: target column in the dataframe
-    randomstate: if chosen, this will the random state for the sampling. Default: None, numpy random integer method between 0 and 4294967295, the range of the sampling module used
-    randomstate_sampler: the number of loops to run to compare random states starting from
     """
     # Drop the excessive category and oversample minority to the intermediate category
     df_train_no_excess = df_train[df_train.group != cat_in_excess]
