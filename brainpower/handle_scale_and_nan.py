@@ -2,6 +2,9 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import sklearn
 
+
+def handle_scale_and_nan(df):
+    
     """
     Function: scale of numeric features and handle of missing values in the input
     
@@ -9,8 +12,7 @@ import sklearn
     
     Output: single formatted DataFrame (scaled_data_full.df)
     """
-
-def handle_scale_and_nan(df):
+    
     features = list(df.select_dtypes(include='float64'))
     cat = list(df.select_dtypes(include='object'))
     df = df.fillna(value=6)
