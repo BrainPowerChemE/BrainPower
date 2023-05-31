@@ -56,11 +56,17 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 ## Examples
 
-### Run Tests
+### Import the package and run tests
+1. clone the github
+2. activate the environment
 
-1. To test the code, run:
-
+```
+/BrainPower/
+conda activate brainpower
+```
+3. Run the unittest
 ```
 /BrainPower/
 python -m unittest
 ```
+
