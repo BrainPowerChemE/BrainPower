@@ -7,6 +7,7 @@ from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 from brainpower import make_confusion_mtrx
+from brainpower import make_roc_curves
 
 class TestMakeRocCurve(unittest.TestCase):
 
