@@ -39,7 +39,7 @@ class TestMakeRocCurve(unittest.TestCase):
 
         # Apply the function
         result = make_confusion_mtrx(dev, df_test, feature_list=['feature1', 'feature2'])
-        false_pos_df=roc_curves_one_vs_rest(data_dev=dev, data_test=df_test, 
+        false_pos_df=make_roc_curves(data_dev=dev, data_test=df_test, 
         metadata=df_metadata, ml_results=result, feature_list=['feature1', 'feature2'])
     
     
