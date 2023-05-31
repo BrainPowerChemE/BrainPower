@@ -35,11 +35,7 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 ### Files
 
-[`data_with_biomarkers.csv`](test-data/data_with_biomarkers.csv) 
-
-[`dev_with_biomarkers.csv`](test-data/dev_with_biomarkers.csv) 
-
-[`test_with_biomarkers.csv`](test-data/test_with_biomarkers.csv) 
+[`data_with_biomarkers.csv`](data/final_dataset/data_with_biomarkers.csv) 
 
 
 ## Examples
