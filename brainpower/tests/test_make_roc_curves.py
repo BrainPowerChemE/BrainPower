@@ -16,16 +16,16 @@ class TestMakeRocCurve(unittest.TestCase):
         dev = pd.DataFrame({
             'feature1': [1.0, 2.0, 3.0, 4.0],
             'feature2': [5.0, 6.0, 7.0, 8.0],
-            'group': ['A', 'B', 'A', 'B'],
+            'group': ['Healthy', 'PD_MCI_LBD', 'AD-MCI', 'PD'],
             'assay_ID': ['ID1', 'ID2', 'ID3', 'ID4']
         })
-        
-        # Create a sample test dataset
+
+        # Create a sample test dataset with matching 'assay_ID' values
         df_test = pd.DataFrame({
             'feature1': [1.5, 2.5, 3.5, 4.5],
             'feature2': [5.5, 6.5, 7.5, 8.5],
-            'group': ['A', 'B', 'A', 'B'],
-            'assay_ID': ['ID5', 'ID6', 'ID7', 'ID8']
+            'group': ['Healthy', 'PD_MCI_LBD', 'PD', 'AD-MCI'],
+            'assay_ID': ['ID1', 'ID2', 'ID3', 'ID4']  # Match 'assay_ID' values with data_dev
         })
        
         # Apply the function
