@@ -27,15 +27,19 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 #### Python Scripts
 
-[`test_find_false_positive_patients.py`](brainpower/find_false_positive_patients.py) tests find_false_positive_patients.py
+[`find_false_positive_patients.py`](brainpower/find_false_positive_patients.py) outputs the dataframe of false positive patients
 
-[`test_make_roc_curves.py`](brainpower/make_roc_curves.py) outputs one-vs-rest ROC Curves
+[`make_roc_curves.py`](brainpower/make_roc_curves.py) outputs one-vs-rest ROC Curves as well as the false positive patients dataframe
 
-[`test_handle_scale_and_nan.py`](brainpower/handle_scale_and_nan.py) replaces NaNs with the lowest value in the dataframe and applies a standard scaler.
+[`handle_scale_and_nan.py`](brainpower/handle_scale_and_nan.py) replaces NaNs with the lowest value in the dataframe and applies a standard scaler.
 
-[`test_make_confusion_mtrx.py`](brainpower/make_confusion_mtrx.py) outputs a confusion matrix based on the machine learning model results
+[`make_confusion_mtrx.py`](brainpower/make_confusion_mtrx.py) outputs a confusion matrix based on the machine learning model results
 
-[`test_over_under.py`](brainpower/over_under.py) balances the patient conditions to have roughly the same amount of patients per category
+[`over_under.py`](brainpower/over_under.py) balances the patient conditions to have roughly the same amount of patients per category
+
+[`select_features.py`](brainpower/select_features.py) runs MRMR feature selection
+
+[`apply_ml_model.py`](brainpower/apply_ml_model.py) runs random forest ML model
 
 
 #### Test Scripts
@@ -48,6 +52,8 @@ This directory stores the scripts used to download, train, and test the dataset 
 [`test_make_confusion_mtrx.py`](brainpower/tests/test_make_confusion_mtrx.py) tests make_confusion_mtrx.py
 
 [`test_over_under.py`](brainpower/tests/test_over_under.py) tests over_under.py
+
+[`test_select_features.py`](brainpower/test_select_features.py) tests select_features.py
 
 ### Files
 
