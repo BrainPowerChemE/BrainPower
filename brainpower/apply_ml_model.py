@@ -40,7 +40,7 @@ def apply_ml_model(dev, classifier, scoring_method='balanced_accuracy', cv=10, f
     elif classifier == "xgboost":
         model = XGBClassifier()
     else:
-        print("wrong classifier named entered")
+        raise ValueError("unknown classifier name provided")
     #define cv quantity:
     if type(cv) == int:
         pass
