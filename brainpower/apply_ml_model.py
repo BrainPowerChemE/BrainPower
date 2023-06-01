@@ -6,7 +6,7 @@
     Output: Dataframe (stats.df) store the evaluation results including the number of folds, scores, average score, standard deviation, model used and method
     """
 
-def apply_ml_model(dev,classifier,scoring_method='balanced_accuracy', cv=10, feature_list=None):
+def apply_ml_model(dev, classifier, scoring_method='balanced_accuracy', cv=10, feature_list=None):
     """
     Finds the score for different ML classifiers
     Takes a dataframe with only target and feature columns
