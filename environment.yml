@@ -38,6 +38,7 @@ dependencies:
   - sip=6.6.2
   - statsmodels=0.13.5
   - xgboost=1.7.3
+  - pip
   - pip:
       - category-encoders==2.6.0
       - mrmr-selection==0.2.6
