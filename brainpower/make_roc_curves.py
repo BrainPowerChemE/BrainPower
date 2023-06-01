@@ -28,7 +28,7 @@ from brainpower import make_confusion_mtrx
 from brainpower import select_features
 from brainpower import find_false_positive_patients
 
-def make_roc_curves(data_dev, data_test, metadata, ml_results, feature_list=None):
+def make_roc_curves(data_dev, data_test, feature_list=None):
 	
     """
     Function: generates and plots Receiver Operating Characteristic (ROC) curves for a one-vs-rest multiclass classification
@@ -89,19 +89,18 @@ def make_roc_curves(data_dev, data_test, metadata, ml_results, feature_list=None
     plt.ylabel("True Positive Rate")
     plt.title(f"One-vs-Rest ROC curves, using {len(feature_list)} features")
     plt.legend()
+    plt.show()
     return plt.savefig('roc_curves.png')
     
 def main(): 
     PATH_DEV_DATA = sys.argv[1]
     PATH_TEST_DATA = sys.argv[2]
-    PATH_METADATA = sys.argv[3]
     data_dev = pd.read_csv(PATH_DEV_DATA)
     data_test = pd.read_csv(PATH_TEST_DATA)
-    metadata = pd.read_csv(PATH_METADATA)
     feature_list = select_features(data_dev, 18)
     results = make_confusion_mtrx(data_dev, data_test, feature_list)
-    false_pos_df=make_roc_curves(data_dev=data_dev, data_test=data_test, 
-        metadata=metadata, ml_results=results, feature_list=feature_list)
+    roc_plot=make_roc_curves(data_dev=data_dev, data_test=data_test, 
+			     feature_list=feature_list)
 
 if __name__ == '__main__':
 	main()

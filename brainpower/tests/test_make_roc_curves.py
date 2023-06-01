@@ -29,8 +29,7 @@ class TestMakeRocCurve(unittest.TestCase):
         })
        
         # Apply the function
-        result = make_confusion_mtrx(dev, df_test, feature_list=['feature1', 'feature2'])
-        roc_plot=make_roc_curves(data_dev=dev, data_test=df_test)
+        roc_plot=make_roc_curves(data_dev=dev, data_test=df_test, feature_list=['feature1', 'feature2'])
     
         # Check if the result is a file
         assert os.path.exists('roc_curves.png'), f"Failed to save {'roc_curves.png'}"
