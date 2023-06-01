@@ -27,19 +27,10 @@ class TestMakeRocCurve(unittest.TestCase):
             'group': ['A', 'B', 'A', 'B'],
             'assay_ID': ['ID5', 'ID6', 'ID7', 'ID8']
         })
-        
-        
-        data = {
-            'Public Sample ID': ['ID1', 'ID2', 'ID3', 'ID4', 'ID5', 'ID6', 'ID7', 'ID8'],
-            'Age': [66, 71, 75, 80, 68, 72, 78, 64],
-            'Sex': ['Male', 'Male', 'Male', 'Female', 'Male', 'Female', 'Male', 'Male']
-        }
-
-        df_metadata = pd.DataFrame(data)
-
+       
         # Apply the function
         result = make_confusion_mtrx(dev, df_test, feature_list=['feature1', 'feature2'])
         roc_plot=make_roc_curves(data_dev=dev, data_test=df_test)
     
-        # Check if the result is a DataFrame
-        self.assertIsInstance(false_pos_df, pd.DataFrame)
+        # Check if the result is a file
+        assert os.path.exists('roc_curves.png'), f"Failed to save {'roc_curves.png'}"
