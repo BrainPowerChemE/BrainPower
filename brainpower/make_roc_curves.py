@@ -45,8 +45,8 @@ def make_roc_curves(data_dev, data_test, feature_list=None):
     X_test = data_test[feature_list]
     y_test = data_test['group']
 
-    X_train = dev[feature_list]
-    y_train = dev['group'] 
+    X_train = data_dev[feature_list]
+    y_train = data_dev['group'] 
 
 
     classifier = sklearn.ensemble.RandomForestClassifier()
