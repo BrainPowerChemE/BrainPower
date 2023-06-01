@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 from brainpower import make_confusion_mtrx
 from brainpower import make_roc_curves
 
+import os 
+
 class TestMakeRocCurve(unittest.TestCase):
 
     def test_make_roc_curves(self):
