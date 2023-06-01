@@ -89,6 +89,7 @@ def make_roc_curves(data_dev, data_test, feature_list=None):
     plt.ylabel("True Positive Rate")
     plt.title(f"One-vs-Rest ROC curves, using {len(feature_list)} features")
     plt.legend()
+    plt.show()
     return plt.savefig('roc_curves.png')
     
 def main(): 
