@@ -1,8 +1,8 @@
+import pandas as pd
+import numpy as np
 from sklearn.datasets import make_classification
 from mrmr import mrmr_classif
 import json
-
-
 
 def select_features(data_dev, n):
     
