@@ -29,7 +29,7 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 [`find_false_positive_patients.py`](brainpower/find_false_positive_patients.py) outputs the dataframe of false positive patients
 
-[`make_roc_curves.py`](brainpower/make_roc_curves.py) outputs one-vs-rest ROC Curves as well as the false positive patients dataframe
+[`make_roc_curves.py`](brainpower/make_roc_curves.py) outputs one-vs-rest ROC Curves
 
 [`handle_scale_and_nan.py`](brainpower/handle_scale_and_nan.py) replaces NaNs with the lowest value in the dataframe and applies a standard scaler.
 
