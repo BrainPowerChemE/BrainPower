@@ -18,7 +18,7 @@ class TestApplyMLModel(unittest.TestCase):
         selected_features = ['Feature1', 'Feature2']
                 
         # Call the apply_ml_model function with the inputs
-        result = apply_ml_model.apply_ml_model(data_dev, classifier='random_forest',scoring_method='balanced_accuracy', cv=10, feature_list=selected_features)
+        result = apply_ml_model(data_dev, classifier='random_forest',scoring_method='balanced_accuracy', cv=10, feature_list=selected_features)
 
         # Assert that the result is a DataFrame
         self.assertIsInstance(result, pd.DataFrame)
