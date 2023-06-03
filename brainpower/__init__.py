@@ -4,4 +4,4 @@ from .make_confusion_mtrx import make_confusion_mtrx
 from .select_features import select_features
 from .find_false_positive_patients import find_false_positive_patients
 from .make_roc_curves import make_roc_curves
-
+from .apply_ml_model import apply_ml_model
