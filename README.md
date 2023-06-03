@@ -55,6 +55,8 @@ This directory stores the scripts used to download, train, and test the dataset 
 
 [`test_select_features.py`](brainpower/test_select_features.py) tests select_features.py
 
+[`test_apply_ml_model.py`](brainpower/test_apply_ml_model.py) tests apply_ml_model.py
+
 ### Files
 
 [`data_with_biomarkers.csv`](data/final_dataset/data_with_biomarkers.csv) 
